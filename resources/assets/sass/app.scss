@@ -1,0 +1,54 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+@import "general";
+@import "navbar";
+@import "homepage";
+@import "productdetail";
+@import "booking";
+@import "payment_virtual";
+@import "retrieve";
+@import "success_payment";
+
+/* Syle Fix */
+  .pt-5, .py-5 {
+    padding-top: 1rem!important;
+  }
+  .breadcrumb {
+    font-weight: 400;
+  }
+  .card {
+    -webkit-box-shadow: 4px 4px 9px 0px rgba(38,153,251,0.2);
+    -moz-box-shadow: 4px 4px 9px 0px rgba(38,153,251,0.2);
+    box-shadow: 4px 4px 9px 0px rgba(38,153,251,0.2);
+    .badge {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+  }
+  #list-product {
+    .col-product {
+        .card {
+            -webkit-box-shadow: 4px 4px 9px 0px rgba(38,153,251,0.2);
+            -moz-box-shadow: 4px 4px 9px 0px rgba(38,153,251,0.2);
+            box-shadow: 4px 4px 9px 0px rgba(38,153,251,0.2);
+            .badge {
+                -webkit-box-shadow: none;
+                box-shadow: none;
+            }
+        }
+    } 
+    p.card-text {
+        min-height: 0;
+        color: #3a4555;
+    }
+  } 
+  .card-body .pt-3, .py-3 {
+    padding-top: 0!important;
+  }
+  .card-footer p {
+    margin-bottom: 0;
+  }

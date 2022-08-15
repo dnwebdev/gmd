@@ -1,0 +1,73 @@
+.logo {
+    max-height: 40px
+}
+.gomodo-text {
+    vertical-align: middle;
+    font-family:  'Montserrat', sans-serif;
+}
+.language-option {
+    display: none;
+}
+.why-gomodo .title {
+    cursor: pointer
+}
+.why-gomodo .content {
+    display: none;
+    cursor:pointer;
+}
+.features-boxed .feature-img-container {
+    background-color: #2699fb;
+    height: 210px;
+    width: 210px;
+    border-radius: 50%;
+    margin:30px auto;
+    position: relative;
+}
+.features-boxed .feature-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.parallax-bg .text-contaner {
+    min-height: 300px
+}
+.parallax-bg .text-contaner .in-text-contaner {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:300px
+}
+.parallax-bg .text-contaner .in-text-contaner .additional p{
+    font-size: 20px;
+    color: white;
+    margin-bottom: .5rem
+}
+.parallax-bg .text-contaner .in-text-contaner .additional p a{
+    color:white;
+    text-decoration: underline;
+}
+.testimonials-clean .desc-testimonial{
+    margin: 0
+}
+.testimonials-clean .rounded-circle {
+    max-width: 150px
+}
+.footer-dark .hide {
+    cursor:not-allowed; 
+    display: none;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.footer-dark .address {
+    font-size: smaller
+}
+.footer-dark .address .pl-5px {
+    padding-left: 5px
+}
+.footer-dark .address .title {
+    cursor: pointer
+}
+.contact-clean .text-center {
+    font-size: 22px
+}

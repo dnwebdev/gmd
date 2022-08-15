@@ -1,0 +1,23 @@
+<?php
+
+namespace App\Http\Resources\Region\Country;
+
+use Illuminate\Http\Resources\Json\Resource;
+
+class CountryResource extends Resource
+{
+    /**
+     * Transform the resource into an array.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return array
+     */
+    public function toArray($request)
+    {
+        return [
+            'id'=>$this->id_country,
+            'country'=>$this->country_name,
+            'code'=>$this->sortname
+        ];
+    }
+}

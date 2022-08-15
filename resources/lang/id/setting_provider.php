@@ -1,0 +1,73 @@
+<?php
+
+return [
+    // Menu Settings Page
+    'settings' => 'Pengaturan',
+    'business_information' => 'Informasi Bisnis',
+    'business_logo' => 'Logo Bisnis',
+    'operator_name' => 'Nama Operator',
+    'website_address' => 'Alamat Website',
+    'view_website' => 'Lihat Website',
+    'tagline' => 'Tagline',
+    'tagline_in_banner' => 'Slogan di banner',
+    'company_short_description' => 'Deskripsi singkat perusahaan',
+    'this_will_be' => 'Ini akan ditampilkan di bagian bawah halaman Anda',
+    'input_your_email_address' => 'Masukan alamat email Anda',
+    'use_country' => 'Gunakan kode negara',
+    'input_your_username_only' => 'Hanya masukan username',
+    'default_color' => 'Warna default',
+    'short_description' => 'Deskripsi Singkat',
+    'about_your_business' => 'Tentang Bisnis Anda',
+    'address_company' => 'Alamat Perusahaan',
+    'address_company_map' => 'Masukkan Alamat Perusahaan',
+    'business_email' => 'Email Bisnis',
+    'whatsaap_enable_phone_number' => 'Nomor Telepon melalui WhatsApp',
+    'social_media' => 'Media Sosial',
+    'website_color' => 'Warna Website',
+    'font_color' => 'Warna Huruf',
+    'custom_logo' => 'Logo Khusus',
+    'default_logo' => 'Logo Standar',
+    'banner' => 'Banner',
+    'custom_banner' => 'Banner Khusus',
+    'default_banner' => 'Banner Standar',
+    'security_information' => 'Ganti Kata Sandi',
+    'password_tooltip' => 'Isi ketika Anda ingin mengubah kata sandi',
+    'old_password' => 'Kata sandi lama',
+    'new_password' => 'Kata sandi baru',
+    'new_password_confirmation' => 'Konfirmasi kata sandi baru',
+    'submit' => 'Simpan',
+    'preview' => 'Pratinjau',
+    'image_term1' => 'Resolusi yang disarankan: 128 x 128 piksel',
+    'image_term2' => 'Ukuran gambar tidak boleh lebih dari 2 MB',
+    'image_term3' => 'Resolusi Optimal: 1280 piksel x 480 piksel',
+    'office_location' => 'Search office location',
+    'use_saved_bank' => 'Gunakan rekening bank yang sudah tersimpan',
+
+    //SEO
+    'seo_tooltip' => 'Mengoptimalkan situs agar dapat tampil di mesin pencarian dan meningkatkan peringkat situs Anda ',
+    'site_title' => 'Judul Halaman',
+    'site_title_tooltip' => 'Nama penyedia jasa yang akan didaftarkan ke dalam mesin pencarian',
+    'site_description' => 'Deskripsi Halaman',
+    'site_description_tooltip' => 'Informasi singkat tentang penyedia jasa',
+    'site_keyword' => 'Kata Kunci Halaman ',
+    'site_keyword_tooltip' => 'Masukkan kata kunci, pisahkan dengan tanda koma.',
+    'max_70'=>'Maksimal 70 Karakter',
+    'max_150'=>'Maksimal 150 Karakter',
+
+    // proses submit
+    'company_updated' => 'Berhasil diperbarui!',
+    'preview_now' => 'Tinjau sekarang',
+
+    // connection validation
+    'connection' => 'Maaf, sepertinya jaringan internet anda sedang bermasalah',
+
+    'manual_transfer' => [
+        'info' => 'Info: Pembayaran dilakukan melalui transfer ke bank BCA. Pelanggan harus mengunggah bukti transfer secara manual untuk melakukan konfirmasi.',
+        'title' => 'Tambahkan opsi pembayaran transfer via Bank BCA kepada Pelanggan saya',
+        'destination_account_number' => 'Nomor Rekening Tujuan : ',
+        'account_holder_name' => 'Nama Pemilik Rekening : ',
+        'title_alert' => 'Anda yakin ingin menggunakan Transfer Manual BCA dengan data berikut?',
+        'yes' => 'Ya',
+        'no' => 'Tidak',
+    ],
+];

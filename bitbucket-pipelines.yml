@@ -1,0 +1,11 @@
+image: edbizarro/gitlab-ci-pipeline-php:7.2-alpine
+pipelines:
+  branches:
+    development:
+      - step:
+          deployment: staging
+          script:
+            - composer global require laravel/envoy:1.6.1
+            - ~/.composer/vendor/bin/envoy run deploy-staging --branch=development
+          caches:
+            - composer

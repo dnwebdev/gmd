@@ -1,0 +1,174 @@
+.error {
+    color: red !important
+}
+
+.align-items-end {
+    margin-bottom: .5rem !important;
+}
+
+.toggle-password {
+    cursor: pointer;
+}
+
+.field-icon {
+    float: right;
+    margin-right: 15px;
+    margin-top: -35px;
+    position: relative;
+    z-index: 2;
+    color: rgba(0, 0, 0, .54);
+}
+
+.password .form-with-icon .form-control {
+    padding-right: 3.5rem;
+}
+
+.introjs-tooltip {
+    min-width: fit-content;
+    min-width: min-content; /* firefox */
+    padding: 30px;
+}
+
+.introjs-helperNumberLayer {
+    visibility: hidden;
+}
+
+.introjs-bullets {
+    display: none;
+}
+
+.introjs-tooltipbuttons {
+    text-align: center;
+}
+
+.introjs-button {
+    font: 14px/normal sans-serif;
+}
+
+.swal2-container {
+    z-index: 999999999999 !important;
+}
+
+.introjs-tooltiptext p {
+    margin-bottom: 0;
+}
+
+/* Intro.js Floating Debugging */
+div .introjs-floating {
+    left: 15px !important;
+    bottom: unset !important;
+    top: -127px !important;
+    margin-left: unset !important;
+    margin-top: unset !important;
+}
+
+.introjs-donebutton {
+    color: #fff !important;
+    background: #0094d1 !important;
+    padding: 10px 27px;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    text-shadow: unset;
+}
+
+.introjs-donebutton:hover {
+    color: #0094d1 !important;
+    background: white !important;
+    border: 2px solid #0094d1;
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+    transition: all 0.4s ease 0s;
+    text-shadow: unset;
+}
+
+.modal {
+    z-index: 999999999 !important;
+}
+
+/* Chosen */
+.chosen-container-multi .chosen-choices {
+    padding: 0 15px;
+    border: 1px solid #ced4da;
+    background-image: none;
+}
+
+.chosen-container-multi .chosen-choices li.search-choice {
+    padding: 0 1rem;
+    line-height: 2rem;
+    background: #757575;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    color: #fff;
+    font-size: .75rem;
+}
+
+.chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
+    position: static;
+    background: 0 0 !important;
+    display: inline-block;
+    color: #fff;
+    font-size: 1rem;
+    margin-left: .5rem;
+    width: auto;
+    height: 100%;
+}
+
+/* Firefox Disable Button */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+.rotate{
+    -moz-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.rotate.down{
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.select2-container--default .select2-dropdown {
+    z-index: 999999999;
+}
+.fa-info-circle {
+    font-size:14px
+}
+#description {
+    resize: none
+}
+/* Tiny MCE character counter */
+.mce-statusbar .mce-container-body {
+    height: 30px;
+}
+.mce-label.mce-charactercount {
+    margin: 2px 0 2px 2px;
+    padding: 8px;
+    font-size: 12px;
+}
+.mce-path {
+    display: none !important
+}
+@media (min-width: 320px) and (max-width: 992px) {
+    .introjs-tooltip {
+        padding: 5px;
+    }
+
+    div .introjs-floating {
+        top:-100px!important;
+    }
+
+    .introjs-tooltiptext p {
+        min-width: 40px !important;
+    }
+}

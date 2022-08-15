@@ -1,0 +1,30 @@
+{
+    "name": "gomodo/xendit",
+    "authors": [
+        {
+            "name": "Karisma Prabakuncara",
+            "email": "h.karisma.p@hotmail.com"
+        }
+    ],
+    "require": {},
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.0.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Gomodo\\Xendit\\XenditServiceProvider"
+            ],
+            "aliases": {
+                "Xendit": "Gomodo\\Xendit\\Facades\\XenditFacade"
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Gomodo\\Xendit\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

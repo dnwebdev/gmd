@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Gomodo">
+  <meta name="author" content="Ervandra Halim">
+  <link rel="icon" href="favicon.ico">
+  <title>Settings | Gomodo for Business</title>
+  <link href="../lib/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../lib/css/fontface.min.css" rel="stylesheet">
+  <link href="../css/index.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header id="header" class="dashboard-nav">
+    <div class="navigation">
+      <div class="dashboard-logo">
+        <a href="#"><img src="../img/mylogo.png" alt="GOMODO"></a>
+      </div>
+      <div class="dashboard-profile">
+        <!-- <div class="profile-image">
+          <img src="../img/profile-picture.png" alt="PROFILE">
+        </div> -->
+        <div class="profile-info">
+          <h3>Tripad Travel</h3>
+          <h5>Adventurer</h5>
+        </div>
+      </div>
+      <div class="dashboard-menu-toggle">
+        <button class="dashboard-toggle" data-toggle="collapse" data-target="#dashboard-menu"><span class="fa fa-bars"></span></button>
+      </div>
+      <div class="dashboard-menu collapse" id="dashboard-menu">
+        <nav id="mainmenu">
+          <ul>
+            <li><a href="dashboard.html"><span class="fa fa-dashboard"></span>Dashboard</a></li>
+            <li><a href="order.html"><span class="fa fa-briefcase"></span>Order</li>
+            <li><a href="product.html"><span class="fa fa-archive"></span>Product</a></li>
+            <li><a href="withdraw.html"><span class="fa fa-credit-card"></span>Withdrawal</a></li>
+            <li><a href="bank.html"><span class="fa fa-university"></span>Bank account</a></li>
+            <li class="active"><a href="settings.html"><span class="fa fa-link"></span>Settings</a></li>
+            <li><a href="help.html"><span class="fa fa-question-circle"></span>Help</a></li>
+          </ul>
+        </nav>
+        <nav class="sticky-nav">
+          <ul>
+            <li><a href="#"><span class="fa fa-sign-out"></span>Log Out</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section id="content">
+    <div class="dashboard-header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <div class="dashboard-title">
+              <h1>Settings</h1>
+              <div class="dashboard-tools">
+                <div class="breadcrumbs">
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li>Settings</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dashboard-content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-6">
+
+                <div class="widget" id="operator-settings">
+                  <div class="widget-header">
+                    <h3>Operator Settings</h3>
+                  </div>
+                  <div class="widget-content">
+                    <div class="widget-form">
+                      <form action="#">
+                        <div class="form-group">
+                          <label for="operator-name">Operator Name</label>
+                          <input type="text" class="form-control" id="operator-name" name="operator-name" value="Dody Adventure" />
+                        </div>
+
+                        <div class="form-group">
+                          <label for="domain-name">Domain Name</label>
+                          <div class=" form-with-icon icon-right form-domain">
+                            <input type="text" class="form-control-domain" id="domain-name" name="domain-name" value="dodyadventure" />
+                            <div class="root-domain">.gomodo.com</div>
+                            <span class="form-icon"><span class="fa fa-check"></span></span>
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="tagline">Tagline</label>
+                          <textarea name="tagline" id="tagline" rows="3" class="form-control">
+Prepare your gears and you! We offer lux and memorable trip around Indonesia!
+You could choose or customize your adventure.
+                          </textarea>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="about-operator">About Your Operator</label>
+                          <textarea name="about-operator" id="about-operator" rows="6" class="form-control">
+Dody Adventure was established in 2012 by Indonesian adventure people who have passions in travelling, adventure activities, culture exploration and documentary. Based on our years of experience, skills and knowledge, we develop a wide range of trip packages and events that are unique, unforgettable and valuable for our customers.
+                            </textarea>
+                        </div>
+
+                        <div class="form-group multiple">
+                          <label for="contact">Contact</label>
+                          <div class="form-with-icon">
+                            <span class="form-icon"><span class="fa fa-envelope"></span></span>
+                            <input type="email" class="form-control" name="contact" id="contact" value="dodyadventure@gmail.com">
+                          </div>
+                          <div class="form-with-icon">
+                            <span class="form-icon"><span class="fa fa-phone"></span></span>
+                            <input type="text" class="form-control" name="contact-2" id="contact-2" value="081212345678">
+                          </div>
+                        </div>
+
+                        <div class="form-group multiple">
+                          <label for="social">Social Media</label>
+                          <div class="form-with-icon">
+                            <span class="form-icon"><span class="fa fa-facebook"></span></span>
+                            <input type="text" class="form-control" name="social-media" id="social-media" value="dodyadventure">
+                          </div>
+                          <div class="form-with-icon">
+                            <span class="form-icon"><span class="fa fa-twitter"></span></span>
+                            <input type="text" class="form-control" name="social-media-2" id="social-media-2" value="@dodyadventure">
+                          </div>
+                        </div>
+
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="widget" id="featured-product">
+                  <div class="widget-header">
+                    <h3>Featured Product</h3>
+                  </div>
+                  <div class="widget-content">
+                    <div class="widget-form">
+                      <form action="#">
+                        <div class="form-group">
+                          <label for="featured1">Featured product slot 1</label>
+                          <select name="featured1" id="featured1" class="form-control">
+                            <option value="1">Expendable Bromo</option>
+                            <option value="2">Ubud Ville</option>
+                            <option value="3">City Tour</option>
+                          </select>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="featured2">Featured product slot 2</label>
+                          <select name="featured2" id="featured2" class="form-control">
+                            <option value="2">Ubud Ville</option>
+                            <option value="1">Expendable Bromo</option>
+                            <option value="3">City Tour</option>
+                          </select>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="featured3">Featured product slot 3</label>
+                          <select name="featured3" id="featured3" class="form-control">
+                            <option value="3">City Tour</option>
+                            <option value="1">Expendable Bromo</option>
+                            <option value="2">Ubud Ville</option>
+                          </select>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-sm-12 col-md-12 col-lg-6">
+
+                <div class="widget" id="operator-logo">
+                  <div class="widget-header">
+                    <h3>Operator Logo</h3>
+                  </div>
+                  <div class="widget-content">
+                    <div class="widget-form">
+                      <form action="#">
+                        <div class="form-group">
+                          <div class="custom-radio-control custom-radio">
+                            <input type="radio" id="custom-logo" name="operator-logo" class="custom-control-input"
+                              checked>
+                            <label class="custom-control-label" for="custom-logo">Custom Logo</label>
+                            <div class="custom-block is-open">
+                              <div class="custom-logo-block d-lg-flex align-items-end">
+                                <div class="custom-logo-image position-relative">
+                                  <div class="custom-image-holder">
+                                    <img src="../img/logo-operator.png" alt="LOGO CUSTOM">
+                                  </div>
+                                  <button class="btn btn-small">Change</button>
+                                  <input type="file" name="custom-image-file" id="custom-logo-image-input" class="invisible-input">
+                                </div>
+                                <div class="custom-logo-helper">
+                                  <p>Optimal resolution: 128 pixels x 128 pixels</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <div class="custom-radio-control custom-radio">
+                            <input type="radio" id="default-logo" name="operator-logo" class="custom-control-input">
+                            <label class="custom-control-label" for="default-logo">Default Logo</label>
+                            <div class="custom-block is-open">
+                              <div class="custom-default-logo">
+                                <label for="dlogo-1">
+                                  <input type="radio" id="dlogo-1" name="default-logo">
+                                  <img src="../img/camping.png" alt="SURFING">
+                                </label>
+
+                                <label for="dlogo-2">
+                                  <input type="radio" id="dlogo-2" name="default-logo">
+                                  <img src="../img/diver.png" alt="SURFING">
+                                </label>
+
+                                <label for="dlogo-3">
+                                  <input type="radio" id="dlogo-3" name="default-logo">
+                                  <img src="../img/surfing.png" alt="SURFING">
+                                </label>
+
+                                <label for="dlogo-4">
+                                  <input type="radio" id="dlogo-4" name="default-logo">
+                                  <img src="../img/watersport.png" alt="SURFING">
+                                </label>
+
+                                <label for="dlogo-5">
+                                  <input type="radio" id="dlogo-5" name="default-logo">
+                                  <img src="../img/hiking.png" alt="SURFING">
+                                </label>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="widget" id="banner">
+                  <div class="widget-header">
+                    <h3>Banner</h3>
+                  </div>
+                  <div class="widget-content">
+                    <div class="widget-form">
+                      <form action="#">
+
+                        <div class="form-group">
+                          <div class="custom-radio-control custom-radio">
+                            <input type="radio" id="custom-banner" name="banner" class="custom-control-input" checked>
+                            <label class="custom-control-label" for="custom-banner">Custom Banner</label>
+                            <div class="custom-block is-open">
+                              <div class="custom-banner-holder position-relative">
+                                <img src="../img/custom-banner.png" alt="CUSTOM BANNER">
+                                <input type="file" name="custom-banner-file" id="custom-banner-image-input" class=" invisible-input">
+                              </div>
+                              <div class="custom-logo-block d-lg-flex align-items-end">
+                                <div class="custom-logo-image">
+                                  <label class="btn btn-small" for="custom-banner-image-input">Change</label>
+                                </div>
+                                <div class="custom-logo-helper">
+                                  <p>Optimal resolution: 1280 pixels x 480 pixels</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <div class="custom-radio-control custom-radio">
+                            <input type="radio" id="default-banner" name="banner" class="custom-control-input">
+                            <label class="custom-control-label" for="default-banner">Default Banner</label>
+                            <div class="custom-block is-open">
+                              <div class="custom-default-banner">
+                                <label for="dbanner-1">
+                                  <input type="radio" id="dbanner-1" name="default-banner">
+                                  <img src="../img/1.png" alt="SURFING">
+                                </label>
+
+                                <label for="dbanner-2">
+                                  <input type="radio" id="dbanner-2" name="default-banner">
+                                  <img src="../img/2.png" alt="SURFING">
+                                </label>
+
+                                <label for="dbanner-3">
+                                  <input type="radio" id="dbanner-3" name="default-banner">
+                                  <img src="../img/3.png" alt="SURFING">
+                                </label>
+
+                                <label for="dbanner-4">
+                                  <input type="radio" id="dbanner-4" name="default-banner">
+                                  <img src="../img/4.png" alt="SURFING">
+                                </label>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </form>
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- <div class="widget" id="theme">
+                  <div class="widget-header">
+                    <h3>Theme Color</h3>
+                  </div>
+                  <div class="widget-content">
+                    <div class="widget-form">
+                      <form action="#">
+                        <div class="color-picker">
+                          <div class="color-picker-area">
+                            <img src="../img/colorpicker.png" alt="COLOR PICKER">
+                          </div>
+                          <div class="color-picker-info">
+                            <label for="color-picker">Selected Color</label>
+                            <div class="color-preview">
+                              <div class="color-tab" style="background:#0893CF"></div>
+                              <div class="color-hex">#0893CF</div>
+                            </div>
+                            <button class="btn btn-outline btn-block">Reset</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div> -->
+
+              </div>
+            </div>
+
+            <div class="widget" id="business-administration">
+              <div class="widget-header">
+                <h3>Business Administration</h3>
+              </div>
+              <div class="widget-content">
+                <div class="widget-form">
+                  <form action="#">
+
+                    <div class="row">
+                      <div class="col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group">
+                          <label for="id-card-type">Owner Identity Card Type</label>
+                          <select name="id-card-type" id="id-card-type" class="form-control">
+                            <option value="1">KTP</option>
+                            <option value="2">SIM</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group">
+                          <label for="id-number">ID Number</label>
+                          <input type="text" id="id-number" name="id-number" class="form-control" value="9123t123123123">
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group">
+                          <label for="tax-id-number">Tax ID (NPWP) Number</label>
+                          <input type="text" id="tax-id-number" name="tax-id-number" class="form-control" value="312812310231123">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group">
+                          <label for="bank">Bank</label>
+                          <select name="bank" id="bank" class="form-control">
+                            <option value="1">Mandiri</option>
+                            <option value="2">BCA</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group">
+                          <label for="account-name">Account Name</label>
+                          <input type="text" id="account-name" name="account-name" class="form-control" value="Tripad Travel">
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group">
+                          <label for="account-number">Account Number</label>
+                          <input type="text" id="account-number" name="account-number" class="form-control" value="1231 1231311">
+                        </div>
+                      </div>
+                    </div>
+
+                  </form>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="../lib/js/jquery-slim.min.js"></script>
+  <script src="../lib/js/bootstrap.min.js"></script>
+  <script src="../js/operator.js"></script>
+</body>
+
+</html>

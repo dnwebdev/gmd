@@ -1,0 +1,114 @@
+{
+  "name": "laravel/laravel",
+  "description": "The Laravel Framework.",
+  "keywords": [
+    "framework",
+    "laravel"
+  ],
+  "license": "MIT",
+  "type": "project",
+  "require": {
+    "php": ">=7.0.0",
+    "ext-curl": "*",
+    "ext-dom": "*",
+    "ext-json": "*",
+    "ext-openssl": "*",
+    "ext-simplexml": "*",
+    "barryvdh/laravel-cors": "^0.11.3",
+    "barryvdh/laravel-dompdf": "^0.8.1",
+    "bensampo/laravel-enum": "1.15.0",
+    "doctrine/dbal": "^2.6",
+    "fideloper/proxy": "~3.3",
+    "gomodo/discord": "dev-master",
+    "gomodo/midtrans": "dev-development",
+    "gomodo/xendit": "dev-master",
+    "intervention/image": "^2.4",
+    "kayiz/woowa": "dev-master",
+    "laracasts/utilities": "^3.0",
+    "laravel/framework": "5.5.*",
+    "laravel/passport": "~4.0",
+    "laravel/tinker": "~1.0",
+    "laravelcollective/html": "^5.4.0",
+    "league/html-to-markdown": "^4.8",
+    "maatwebsite/excel": "^3.1",
+    "mews/purifier": "^2.1.4",
+    "milon/barcode": "^5.1",
+    "nicolaslopezj/searchable": "^1.10",
+    "paragonie/random_compat": "2.*",
+    "proengsoft/laravel-jsvalidation": "^2.3",
+    "propaganistas/laravel-phone": "^4.1",
+    "ramsey/uuid": "^3.7",
+    "spatie/laravel-analytics": "^3.6",
+    "spatie/laravel-sitemap": "^3",
+    "stevebauman/location": "^3.0",
+    "yajra/laravel-datatables-oracle": "^8.13"
+  },
+  "require-dev": {
+    "barryvdh/laravel-ide-helper": "^2.5",
+    "filp/whoops": "~2.0",
+    "fzaninotto/faker": "~1.4",
+    "mockery/mockery": "0.9.*",
+    "phpunit/phpunit": "~6.0",
+    "sven/artisan-view": "^3.2"
+  },
+  "autoload": {
+    "classmap": [
+      "database/seeds",
+      "database/factories"
+    ],
+    "psr-4": {
+      "App\\": "app/"
+    },
+    "files": [
+      "app/Helpers/kayiz.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "minimum-stability": "dev",
+  "repositories": [
+    {
+      "type": "path",
+      "url": "./app/Packages/gomodo/midtrans/"
+    },
+    {
+      "type": "path",
+      "url": "./app/Packages/gomodo/discord/"
+    },
+    {
+      "type": "path",
+      "url": "./app/Packages/gomodo/xendit/"
+    },
+    {
+      "type": "path",
+      "url": "./app/Packages/kayiz/woowa/"
+    }
+  ],
+  "prefer-stable": true,
+  "extra": {
+    "laravel": {
+      "dont-discover": [
+      ]
+    }
+  },
+  "scripts": {
+    "post-root-package-install": [
+      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+    ],
+    "post-create-project-cmd": [
+      "@php artisan key:generate"
+    ],
+    "post-autoload-dump": [
+      "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+      "@php artisan package:discover"
+    ]
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  }
+}

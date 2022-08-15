@@ -1,0 +1,766 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Gomodo">
+  <meta name="author" content="Ervandra Halim">
+  <link rel="icon" href="favicon.ico">
+  <title>Product Detail | Gomodo for Business</title>
+  <link href="../lib/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../lib/css/fontface.min.css" rel="stylesheet">
+  <link href="../lib/css/chosen.min.css" rel="stylesheet">
+  <link href="../css/index.css" rel="stylesheet">
+</head>
+<body>
+
+  <header id="header" class="dashboard-nav">
+    <div class="navigation">
+      <div class="dashboard-logo">
+        <a href="#"><img src="../img/mylogo.png" alt="GOMODO"></a>
+      </div>
+      <div class="dashboard-profile">
+        <!-- <div class="profile-image">
+          <img src="../img/profile-picture.png" alt="PROFILE">
+        </div> -->
+        <div class="profile-info">
+          <h3>Tripad Travel</h3>
+          <h5>Adventurer</h5>
+        </div>
+      </div>
+      <div class="dashboard-menu-toggle">
+        <button class="dashboard-toggle" data-toggle="collapse" data-target="#dashboard-menu"><span class="fa fa-bars"></span></button>
+      </div>
+      <div class="dashboard-menu collapse" id="dashboard-menu">
+        <nav id="mainmenu">
+          <ul>
+              <li><a href="dashboard.html"><span class="fa fa-dashboard"></span>Dashboard</a></li>
+              <li><a href="order.html"><span class="fa fa-briefcase"></span>Order</li>
+              <li  class="active"><a href="product.html"><span class="fa fa-archive"></span>Product</a></li>
+              <li><a href="withdraw.html"><span class="fa fa-credit-card"></span>Withdrawal</a></li>
+              <li><a href="bank.html"><span class="fa fa-university"></span>Bank account</a></li>
+              <li><a href="settings.html"><span class="fa fa-link"></span>Settings</a></li>
+              <li><a href="help.html"><span class="fa fa-question-circle"></span>Help</a></li>
+          </ul>
+        </nav>
+        <nav class="sticky-nav">
+          <ul>
+            <li><a href="#"><span class="fa fa-sign-out"></span>Log Out</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section id="content">
+    <div class="dashboard-header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <div class="dashboard-title">
+              <h1>Product Detail</h1>
+              <div class="dashboard-tools">
+                <div class="breadcrumbs">
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li>Product Detail</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dashboard-content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <form action="#">
+              
+              <div class="dashboard-cta">
+                <a href="product-detail.html" class="btn btn-primary btn-cta" data-toggle="modal" data-target="#successModal">Save</a>
+              </div>
+
+              <div class="widget" id="product-detail">
+                <div class="widget-header">
+                  <h3>Product Detail</h3>
+                </div>
+                <div class="widget-content">
+                  <div class="widget-form">
+
+                    <div class="row">
+                      <div class="col-sm-12 col-md-12 col-lg-6 col-xl-5">
+                        <div class="form-group">
+                          <label for="pname">Product Name</label>
+                          <input type="text" id="pname" name="pname" class="form-control" value="Expendable Bromo" />
+                        </div>
+
+                        <div class="form-group">
+                          <label for="guide-language">Product Category</label>
+                          <select name="guide-language" id="guide-language" class="form-control chosen-select" multiple>
+                            <option value="0" selected>Camping</option>
+                            <option value="1">Caving</option>
+                            <option value="3">Climbing</option>
+                          </select>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="plocation">Location</label>
+                          <div class="form-with-icon">
+                            <span class="form-icon"><span class="fa fa-map-marker"></span></span>
+                            <input type="text" class="form-control" id="plocation" name="plocation" placeholder="Location"
+                              value="Malang, Jawa Timur" />
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="guide-language">Guide Language</label>
+                          <select name="guide-language" id="guide-language" class="form-control chosen-select" multiple>
+                            <option value="0" selected>Indonesia</option>
+                            <option value="1">English</option>
+                            <option value="3">France</option>
+                          </select>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="ptype">Type</label>
+                          <select id="ptype" name="ptype" class="form-control">
+                            <option value="0">One day trip</option>
+                            <option value="1" selected>Multi day trip</option>
+                          </select>
+                        </div>
+
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-6 col-xl-7">
+                        <div class="form-group">
+                          <label for="pabout">About this product</label>
+                          <textarea name="pabout" id="pabout" rows="7" class="form-control">Mount Bromo (Indonesian: Gunung Bromo), is an active volcano and part of the Tengger massif, in East Java, Indonesia. At 2,329 metres (7,641 ft) it is not the highest peak of the massif, but is the most well known. The massif area is one of the most visited tourist attractions in East Java, Indonesia. The volcano belongs to the Bromo Tengger Semeru National Park. The name of Bromo derived from Javanese pronunciation of Brahma, the Hindu creator god.</textarea>
+                        </div>
+                        <div class="form-group">
+                          <label for="pmeeting">Meeting Point</label>
+                          <div class="embed-responsive embed-responsive-21by9">
+                            <div id="map_canvas" class="embed-responsive-item">
+                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15806.180045972262!2d112.94425743665883!3d-7.942493358463892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd637aaab794a41%3A0xada40d36ecd2a5dd!2sMt+Bromo!5e0!3m2!1sen!2sid!4v1539158664137"
+                                width="800" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product Availbility -->
+              <div class="widget" id="order-guest">
+                <div class="widget-header">
+                  <h3>Product Availbility</h3>
+                </div>
+                <div class="widget-content">
+                  <form action="#" class="form-group-no-margin">
+                    <div class="row">
+                      <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                          <div class="form-group">
+                            <label for="nationality">Jenis Ketersedian Waktu</label>
+                            <select class="form-control" id="product-available" name="product-available">
+                              <option selected="selected">Pilih Jenis Waktu</option>
+                              <option value="1">Fixed dates</option>
+                              <option value="2">Always Available</option>
+                            </select>
+                          </div>
+                      </div>
+                    </div>
+                    <!-- <p style="magin-bottom:-5px;padding:0;">Masa Aktif Produk<hr class="full-hr" style="margin-top:0px;"></p> -->
+                    <!-- product date -->
+                    <div class="row active_product_date">
+                      <!-- start date -->
+                      <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                        <div class="form-group">
+                          <label for="start-date">Tanggal Mulai Produk</label>
+                          <input type="text" class="form-control" id="start-date" name="start-date"/>
+                        </div>
+                      </div>
+                      <!-- end date -->
+                      <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                        <div class="form-group">
+                          <label for="end-date">Tanggal Berakhir Produk</label>
+                          <input type="text" class="form-control" id="end-date" name="end-date"/>
+                        </div>
+                      </div>
+                      <!-- days count -->
+                      <!-- <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                        <div class="row days-group">
+                          <div class="col">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Sun
+                            </label>
+                          </div>
+                          <div class="col">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Mon
+                            </label>
+                          </div>
+                          <div class="col">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Tue
+                            </label>
+                          </div>
+                          <div class="col">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Wed
+                            </label>
+                          </div>
+                          <div class="col">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Thu
+                            </label>
+                          </div>
+                          <div class="col">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Fri
+                            </label>
+                          </div>
+                          <div class="col">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Sat
+                            </label>
+                          </div>
+                        </div>
+                      </div> -->
+                      <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                        <button type="button" class="btn-success btn-sm btn-add">Add date</button>
+                      </div>
+                    </div>
+                    <!-- <hr class="full-hr"> -->
+                    <div class="row active_product_date">
+                      <!-- start date -->
+                      <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                        <div class="form-group">
+                          <label for="start-date">Tanggal Mulai Produk</label>
+                          <input type="text" class="form-control" id="start-date" name="start-date"/>
+                        </div>
+                      </div>
+                      <!-- end date -->
+                      <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                        <div class="form-group">
+                          <label for="end-date">Tanggal Berakhir Produk</label>
+                          <input type="text" class="form-control" id="end-date" name="end-date"/>
+                        </div>
+                      </div>
+                  
+                      <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                        <button type="button" class="btn-danger btn-sm btn-add">Delete date</button>
+                      </div>
+                    </div>
+                    <!-- <hr class="full-hr"> -->
+                    <p style='margin-bottom:5px;margin-top: 15px;color:#0094d1;padding:0;'>Ketersedian Hari<hr class="full-hr" style="margin-top:0px;border-top-color: #0094d1;"></p>
+                    <div class="row">
+                      <div class="col-sm-12 col-md-12 col-lg-3">
+                        <div class="custom-control custom-radio">
+                          <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" value="1">
+                          <label class="custom-control-label" for="customRadio1">Setiap hari dalam tiap minggu</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-3">
+                        <div class="custom-control custom-radio">
+                          <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input" value="2">
+                          <label class="custom-control-label" for="customRadio2">Setiap hari kerja (Senin-juma'at)</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-3">
+                        <div class="custom-control custom-radio">
+                          <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input" value="3">
+                          <label class="custom-control-label" for="customRadio3">Pilih hari secara manual</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-3">
+                        <div class="custom-control custom-radio">
+                          <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input" value="4">
+                          <label class="custom-control-label" for="customRadio4">Pilih hari dari kalendar</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="option_container__date option_container" style="display: none;">
+                      <hr class="full-hr">
+                      <div class="row calendar_days_option">
+                        <!-- start date -->
+                        <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                          <div class="form-group">
+                            <label for="start-date">Pilih Hari/Waktu Mulai</label>
+                            <input type="text" class="form-control" id="start-date" name="start-date"/>
+                          </div>
+                        </div>
+                        <!-- end date -->
+                        <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                          <div class="form-group">
+                            <label for="end-date">Pilih Hari/Waktu Berakhir</label>
+                            <input type="text" class="form-control" id="end-date" name="end-date"/>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="option_container__day option_container" style="display: none;">
+                      <hr class="full-hr">
+                      <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-3 col-xl-6">
+                          <div class="row days-group">
+                            <div class="col">
+                              <input class="form-check-input" type="checkbox" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                Sun
+                              </label>
+                            </div>
+                            <div class="col">
+                              <input class="form-check-input" type="checkbox" id="defaultCheck2">
+                              <label class="form-check-label" for="defaultCheck2">
+                                Mon
+                              </label>
+                            </div>
+                            <div class="col">
+                              <input class="form-check-input" type="checkbox" id="defaultCheck3">
+                              <label class="form-check-label" for="defaultCheck3">
+                                Tue
+                              </label>
+                            </div>
+                            <div class="col">
+                              <input class="form-check-input" type="checkbox" id="defaultCheck4">
+                              <label class="form-check-label" for="defaultCheck4">
+                                Wed
+                              </label>
+                            </div>
+                            <div class="col">
+                              <input class="form-check-input" type="checkbox" id="defaultCheck5">
+                              <label class="form-check-label" for="defaultCheck5">
+                                Thu
+                              </label>
+                            </div>
+                            <div class="col">
+                              <input class="form-check-input" type="checkbox" id="defaultCheck6">
+                              <label class="form-check-label" for="defaultCheck6">
+                                Fri
+                              </label>
+                            </div>
+                            <div class="col">
+                              <input class="form-check-input" type="checkbox" id="defaultCheck7">
+                              <label class="form-check-label" for="defaultCheck7">
+                                Sat
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Time slot -->
+                    <p style='margin-bottom:5px;margin-top: 52px;color:#0094d1;padding:0;'>Waktu Aktifitas<hr class="full-hr" style="margin-top:0px;border-top-color: #0094d1;"></p>
+                    <div class="row">
+                      <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                        <div class="form-group">
+                          <label for="nationality">Waktu Mulai Aktifitas</label>
+                          <input class="form-control" id="duration-count" name="duration-count">
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                        <div class="form-group">
+                          <label for="nationality">Waktu Berakhir Aktifitas</label>
+                          <input class="form-control" id="duration-count" name="duration-count">
+                        </div>
+                      </div>
+                    </div>
+                    <p style='margin-bottom:5px;margin-top: 15px;color:#0094d1;padding:0;'>Durasi Aktifitas<hr class="full-hr" style="margin-top:0px;border-top-color: #0094d1;"></p>
+                    <div class="row">
+                      <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                        <div class="form-group">
+                          <label for="nationality">Lama Durasi Aktivitas</label>
+                          <input class="form-control" id="duration-count" name="duration-count">
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                        <div class="form-group">
+                          <label for="nationality">Satuan Durasi</label>
+                          <select class="form-control" id="date-available" name="date-available">
+                            <option value="1">Jam</option>
+                            <option value="2">Hari</option>
+                            <option value="2">Minggu</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-3">
+                        <div class="form-group">
+                          <label for="max-order">Min.Pax</label>
+                          <input type="number" class="form-control" id="max-order" name="max-order"/>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-3">
+                        <div class="form-group">
+                          <label for="max-order">Max.Pax</label>
+                          <input type="number" class="form-control" id="max-order" name="max-order"/>
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="full-hr">
+                    <div class="row">
+                      <div class="col-sm-12 col-md-12 col-lg-3">
+                        <div class="form-group">
+                          <label for="min-notice">Min.Notice (Days)</label>
+                          <input type="number" class="form-control" id="min-notice" name="min-notice"/>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-3">
+                        <div class="form-group">
+                          <label for="booking-confirmation">Booking Confirmation</label>
+                          <select id="booking-confirmation" name="booking-confirmation" class="form-control">
+                            <option value="0">Manual</option>
+                            <option value="1">Automatically</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-3">
+                        <div class="form-group">
+                          <label for="product-status">Product Status</label>
+                          <select id="product-status" name="product-status" class="form-control">
+                            <option value="0">Active</option>
+                            <option value="1">Non-Active</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-3">
+                        <div class="form-group multiple-form">
+                          <label for="product-status">Publish Product</label>
+                          <select id="product-status" name="product-status" class="form-control">
+                            <option value="0">Yes</option>
+                            <option value="1">No</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="full-hr">
+                    <div class="row">
+                      <div class="col-sm-12 col-md-12 col-lg-6">
+                        <div class="form-group multiple-form">
+                          <label for="product-status">Important Note</label>
+                          <textarea type="text" class="form-control" id="Important Note" name="Important Note"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+              <!-- Product Pricing -->
+              <div class="widget" id="order-guest">
+                <div class="widget-header">
+                  <h3>Product Pricing</h3>
+                </div>
+                <div class="widget-content">
+                  <form action="#">
+                    <div class="row">
+                      <div class="col-sm-12 col-md-12 col-lg-6 ">
+                        <div class="form-group">
+                          <label for="currency">Currency</label>
+                          <select id="currency" name="currency" class="form-control">
+                            <option value="0">IDR</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-6">
+                        <div class="form-group multiple-form">
+                          <label for="advert-price">Advertised Price</label>
+                          <input type="number" class="form-control" id="advert-price" name="advert-price"/>
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="full-hr">
+                    <div class="row">
+                      <div class="col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group">
+                            <label for="discount-name">Discount Name</label>
+                            <input type="text" class="form-control" id="discount-name" name="discount-name"/>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group">
+                          <label for="discount-type">Discount Amount Type</label>
+                          <select id="discount-type" name="discount-type" class="form-control">
+                            <option value="0">Fixed Amount</option>
+                            <option value="0">Percentage %</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group">
+                          <label for="discount-amount">Discount Amount</label>
+                          <input type="number" class="form-control" id="discount-amount" name="discount-amount"/>
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="full-hr">
+                    <!-- Price type -->
+                    <div class="row">
+                      <div class="col-sm-12 col-md-12 col-lg-2">
+                        <div class="form-group ">
+                          <label for="guest-nationality">Price Type</label>
+                          <select id="guest-nationality" name="guest-nationality-1" class="form-control">
+                            <option value="0">Everyone</option>
+                            <option value="1">Adult</option>
+                            <option value="2">Children</option>
+                            <option value="2">Infant</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-2">
+                        <div class="form-group">
+                          <label for="min-order">Price</label>
+                          <input type="number" class="form-control" id="min-order" name="min-order"/>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-2">
+                        <div class="form-group">
+                          <label for="min-order">From</label>
+                          <input type="number" class="form-control" id="min-order" name="min-order"/>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-2">
+                        <div class="form-group">
+                          <label for="min-order">Until</label>
+                          <input type="number" class="form-control" id="min-order" name="min-order"/>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-2">
+                        <button type="button" class="btn-success btn-sm btn-add">Add Price Type</button>
+                      </div>
+                    </div>
+                    <hr class="full-hr">
+                    <!-- Price type -->
+                    <div class="row">
+                      <div class="col-sm-12 col-md-12 col-lg-2">
+                        <div class="form-group ">
+                          <label for="guest-nationality">Price Type</label>
+                          <select id="guest-nationality" name="guest-nationality-1" class="form-control">
+                            <option value="0">Everyone</option>
+                            <option value="1">Adult</option>
+                            <option value="2">Children</option>
+                            <option value="2">Infant</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-2">
+                        <div class="form-group">
+                          <label for="min-order">Price</label>
+                          <input type="number" class="form-control" id="min-order" name="min-order"/>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-2">
+                        <div class="form-group">
+                          <label for="min-order">From</label>
+                          <input type="number" class="form-control" id="min-order" name="min-order"/>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-2">
+                        <div class="form-group">
+                          <label for="min-order">Until</label>
+                          <input type="number" class="form-control" id="min-order" name="min-order"/>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-2">
+                        <button type="button" class="btn-danger btn-sm btn-add">Delete Price Type</button>
+                      </div>
+                    </div>
+                    <p style='margin-bottom:5px;margin-top: 15px;color:#0094d1;padding:0;'>Tambahan<hr class="full-hr" style="margin-top:0px;border-top-color: #0094d1;"></p>
+                    <div class="row">
+                      <div class="col-sm-12 col-md-12 col-lg-3">
+                          <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="includeCheck1">
+                            <label class="form-check-label" for="includeCheck1">Harga sudah termasuk penginapan</label>
+                          </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-3">
+                          <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="includeCheck2">
+                            <label class="form-check-label" for="includeCheck2">Harga sudah termasuk makan</label>
+                          </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-3">
+                          <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="includeCheck3">
+                            <label class="form-check-label" for="includeCheck3">Harga tidak termasuk penginapan</label>
+                          </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-3">
+                          <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="includeCheck4">
+                            <label class="form-check-label" for="includeCheck4">Harga tidak termasuk makan</label>
+                          </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+              <!-- Image uplaod -->
+              <div class="widget" id="images">
+                <div class="widget-header">
+                  <h3>Images</h3>
+                </div>
+                <div class="widget-content">
+                  <div class="widget-form">
+                    <div class="custom-image-gallery">
+                      <div class="widget-image">
+                        <div class="widget-image-upload image-item">
+                          <input type="file" class="custom-file-upload">
+                          <div class="custom-file-placeholder">
+                            <span class="fa fa-upload"></span>
+                            <span class="text">Upload new image</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="widget-image">
+                        <div class="image-item is-main-thumbnail">
+                          <img src="../img/bromo-img.png" alt="PRODUCT IMG" />
+                          <div class="image-overlay">
+                            <button class="btn btn-tools" onclick="alert('removed');">Remove</button>
+                            <button class="btn btn-tools" onclick="alert('thumbnail');">Thumbnail</button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="widget-image">
+                        <div class="image-item">
+                          <img src="../img/bromo-img.png" alt="PRODUCT IMG" />
+                          <div class="image-overlay">
+                            <button class="btn btn-tools" onclick="alert('removed');">Remove</button>
+                            <button class="btn btn-tools" onclick="alert('thumbnail');">Thumbnail</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="widget-image">
+                        <div class="image-item">
+                          <img src="../img/bromo-img.png" alt="PRODUCT IMG" />
+                          <div class="image-overlay">
+                            <button class="btn btn-tools" onclick="alert('removed');">Remove</button>
+                            <button class="btn btn-tools" onclick="alert('thumbnail');">Thumbnail</button>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="widget" id="itinerary">
+                <div class="widget-header">
+                  <h3>Itinerary</h3>
+                  <div class="widget-tools">
+                    <a href="#" class="btn btn-small">Add Day</a>
+                  </div>
+                </div>
+                <div class="widget-content">
+                  <div class="widget-form">
+                    <div class="form-group">
+                      <label for="day-1">Day 1</label>
+                      <textarea name="day-1" id="day-1" rows="4" class="form-control">
+07.45 		: Tiba di kota malang (Bagi peserta yg naik ka matarmaja)
+08.00  		: Meeting point & kordinasi peserta di stasiun malang (Kota Baru)
+09.00 		: Wisata Candi Jago Tumpang
+10.30 		: Menuju Homestay (Check In)
+                      </textarea>
+                    </div>
+                    <div class="form-group">
+                      <label for="day-2">Day 2</label>
+                      <textarea name="day-2" id="day-2" rows="4" class="form-control">
+12.00 		: Istirahat – Sholat - Makan (Include)
+12.30 		: Persiapan River Tubing
+13.30		: Kegiatan River Tubing dengan rute pengarungan 4km
+15.30		: Selesai River Tubing & kembali ke Homestay (Mandi Bilas2 & Istirahat)
+                        </textarea>
+                        <div class="col-sm-12 col-md-12 col-lg-2"></div>
+                          <button type="button" class="btn-danger btn-sm" style="float: right; margin-top: 10px;">Delete Itinerary</button>
+                        </div>
+                        <div class="clear" style="clear: both;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal save -->
+  <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+      <div class="modal-content modal-gomodo">
+        <div class="modal-body text-center">
+          <h3>Congratulation!</h3>
+          <h5 class="modal-icon">
+            <img src="../img/icons/success.png" alt="SUCCESS">
+          </h5>
+          <p>Your product has already create successfully</p>
+          <a class="btn" href="product.html">Close</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../lib/js/jquery-slim.min.js"></script>
+  <script src="../lib/js/bootstrap.min.js"></script>
+  <script src="../lib/js/chosen.jquery.min.js"></script>
+  <script src="../js/operator.js"></script>
+  <script>
+  function getProductType() {
+    jQuery('#product-available').on('change', function(){
+      var dateVal = jQuery('#product-available').find(':selected').val();
+      if(dateVal === "1") {
+        jQuery('.active_product_date').css({display: 'none'});
+      } else {
+        jQuery('.active_product_date').css({display: ''});
+      }
+    })
+  }
+
+  function getDaysAvail() {
+    var $ = jQuery;
+    $('input:radio[name=customRadio]').change(function() {
+      var daysOpt = jQuery('input[name=customRadio]:checked').val();
+      switch(daysOpt) {
+        case '3':
+          $('.option_container__day').css({display: ''});
+          $('.option_container__date').css({display: 'none'});
+          break;
+        case '4':
+          $('.option_container__date').css({display: ''});
+          $('.option_container__day').css({display: 'none'});
+          $('.form-check-input').prop('checked', false);
+          break;
+        default:
+          $('.option_container').css({display: 'none'});
+          $('.form-check-input').prop('checked', false);
+          break;
+      }
+    });
+  }
+
+  jQuery(document).ready(function(e) {
+    getProductType();
+    getDaysAvail();
+    jQuery(".chosen-select").chosen();
+  })
+  </script>
+</body>
+
+</html>

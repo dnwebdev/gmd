@@ -1,0 +1,120 @@
+#banner {
+  padding: 0px;
+  height: 400px;
+  img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  @media all and (max-width: 480px){
+    height: auto;
+    img{
+      object-fit: contain;
+    }
+  }
+}
+
+#intro {
+  h1 {
+    font-size: 40px;
+    font-weight: bold;
+  }
+}
+#search-section{
+  input,select{
+    height: 45px;
+    outline: none;
+    box-shadow: none;
+    display: block!important;
+  }
+}
+#list-product {
+  a:hover *, a {
+    color: #3a4555;
+    text-decoration: none;
+  }
+  .col-product {
+    margin-bottom: 64px;
+    .card {
+      height: 100%;
+      border: none;
+      box-shadow: 0px 20px 40px 0px rgba(38, 153, 251, 0.21);
+      .card-footer {
+        border-top: none;
+      }
+      .card-img-top {
+        height: 200px;
+        object-fit: cover;
+      }
+    }
+    .card:hover{
+      transform: scale(1.01);
+      transition: all .2s ease-in-out;
+    }
+
+  }
+  span.product-tags {
+    color: white;
+    padding: 7px 14px;
+  }
+  p.card-text {
+    text-align: left;
+    font-size: 14px;
+    min-height: 60px;
+  }
+  h3 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .table-product tr td {
+    padding: 4px;
+    vertical-align: middle;
+    font-size: 14px;
+  }
+  a .color-primary-blue, a:hover .color-primary-blue {
+    color: $primaryBlue;
+    padding: 8px 21px;
+    text-transform: uppercase;
+  }
+}
+
+footer {
+  font-size: 14px;
+  padding-bottom: 20px;
+  .powered {
+    display: flex;
+    height: 100%;
+    text-align: center;
+    color: white;
+    align-items: flex-end;
+    justify-content: center;
+    span.bold {
+      margin-left: 5px;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+  p.about {
+    margin-top: 58px;
+  }
+  img {
+    margin-right: 10px;
+  }
+  ul {
+    margin-top: 75px;
+    padding-inline-start: 0px;
+    list-style: none;
+    color: white;
+    @media all and (max-width: 767px){
+      margin-top: 15px;
+    }
+    li {
+      margin-bottom: 8px;
+      img {
+        width: 20px;
+      }
+    }
+  }
+}

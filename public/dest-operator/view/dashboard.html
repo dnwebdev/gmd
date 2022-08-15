@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Gomodo">
+  <meta name="author" content="Ervandra Halim">
+  <link rel="icon" href="favicon.ico">
+  <title>Dashboard | Gomodo for Business</title>
+  <link href="../lib/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../lib/css/fontface.min.css" rel="stylesheet">
+  <link href="../css/index.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header id="header" class="dashboard-nav">
+    <div class="navigation">
+      <div class="dashboard-logo">
+        <a href="#"><img src="../img/mylogo.png" alt="GOMODO"></a>
+      </div>
+      <div class="dashboard-profile">
+        <!-- <div class="profile-image">
+          <img src="../img/mylogo.png" alt="PROFILE">
+        </div> -->
+        <div class="profile-info">
+          <h3>Tripad Travel</h3>
+          <h5>Adventurer</h5>
+        </div>
+      </div>
+      <div class="dashboard-menu-toggle">
+        <button class="dashboard-toggle" data-toggle="collapse" data-target="#dashboard-menu"><span class="fa fa-bars"></span></button>
+      </div>
+      <div class="dashboard-menu collapse" id="dashboard-menu">
+        <nav id="mainmenu">
+          <ul>
+            <li class="active"><a href="dashboard.html"><span class="fa fa-dashboard"></span>Dashboard</a></li>
+            <li><a href="order.html"><span class="fa fa-briefcase"></span>Order</li>
+            <li><a href="product.html"><span class="fa fa-archive"></span>Product</a></li>
+            <li><a href="withdraw.html"><span class="fa fa-credit-card"></span>Withdrawal</a></li>
+            <li><a href="bank.html"><span class="fa fa-university"></span>Bank account</a></li>
+            <li><a href="settings.html"><span class="fa fa-link"></span>Settings</a></li>
+            <li><a href="help.html"><span class="fa fa-question-circle"></span>Help</a></li>
+          </ul>
+        </nav>
+        <nav class="sticky-nav">
+          <ul>
+            <li><a href="#"><span class="fa fa-sign-out"></span>Log Out</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section id="content">
+    <div class="dashboard-header">
+      <div class="container-fluid"> 
+        <div class="row">
+          <div class="col">
+            <div class="dashboard-title">
+              <h1>Dashboard</h1>
+              <div class="dashboard-tools">
+                <div class="breadcrumbs">
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li>Dashboard</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dashboard-content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+              <strong>Hai, sepertinya kamu mendapatkan pesanan baru, yuwk segera cek ! </strong>
+              <a href="#" class="alert-link">ada 2 pesanan baru menunggu</a>
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+
+            <div class="widget" id="insight">
+              <div class="widget-header">
+                <h3>Insight</h3>
+                <div class="widget-tools">
+                  <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                      <a class="nav-item nav-link active" id="nav-daily-tab" data-toggle="tab" href="#daily-tab" role="tab"
+                        aria-controls="daily-tab" aria-selected="true">Daily</a>
+                      <a class="nav-item nav-link" id="nav-weekly-tab" data-toggle="tab" href="#weekly-tab" role="tab"
+                        aria-controls="weekly-tab" aria-selected="false">Weekly</a>
+                      <a class="nav-item nav-link" id="nav-monthly-tab" data-toggle="tab" href="#monthly-tab" role="tab"
+                        aria-controls="monthly-tab" aria-selected="false">Monthly</a>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+              <div class="widget-content widget-full">
+                <div class="tab-content" id="insight-tab">
+                  <div class="tab-pane fade show active" id="daily-tab" role="tabpanel" aria-labelledby="nav-daily-tab">
+
+                    <div class="insight-content">
+                      <div class="insight-row">
+                        <div class="insight-col">
+                          <div class="insight-icon">
+                            <span class="fa fa-briefcase"></span>
+                          </div>
+                          <div class="insight-info">
+                            <h6>519</h6>
+                            <p>Total orders</p>
+                          </div>
+                        </div>
+                        <div class="insight-col">
+                          <div class="insight-info">
+                            <h6>412</h6>
+                            <p>Online orders</p>
+                          </div>
+                        </div>
+                        <div class="insight-col">
+                          <div class="insight-info">
+                            <h6>107</h6>
+                            <p>Offline orders</p>
+                          </div>
+                        </div>
+                        <div class="insight-col">
+                          <div class="insight-info">
+                            <h6><span class="fa fa-caret-square-o-up"></span></h6>
+                            <p>20% from last week</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="insight-row">
+                        <div class="insight-col">
+                          <div class="insight-icon">
+                            <span class="fa fa-briefcase"></span>
+                          </div>
+                          <div class="insight-info">
+                            <h6>4,1 mio</h6>
+                            <p>Total income</p>
+                          </div>
+                        </div>
+                        <div class="insight-col">
+                          <div class="insight-info">
+                            <h6>1,2 mio</h6>
+                            <p>Disbursed</p>
+                          </div>
+                        </div>
+                        <div class="insight-col">
+                          <div class="insight-info">
+                            <h6>2,9 mio</h6>
+                            <p>Deposit</p>
+                          </div>
+                        </div>
+                        <div class="insight-col">
+                          <div class="insight-info">
+                            <h6><span class="fa fa-caret-square-o-up"></span></h6>
+                            <p>12% popularity</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="tab-pane fade" id="weekly-tab" role="tabpanel" aria-labelledby="nav-weekly-tab">
+                    <div class="insight-content">
+                      <div class="insight-row">
+                        <div class="insight-col">
+                          <div class="insight-icon">
+                            <span class="fa fa-briefcase"></span>
+                          </div>
+                          <div class="insight-info">
+                            <h6>3119</h6>
+                            <p>Total orders</p>
+                          </div>
+                        </div>
+                        <div class="insight-col">
+                          <div class="insight-info">
+                            <h6>412</h6>
+                            <p>Online orders</p>
+                          </div>
+                        </div>
+                        <div class="insight-col">
+                          <div class="insight-info">
+                            <h6>107</h6>
+                            <p>Offline orders</p>
+                          </div>
+                        </div>
+                        <div class="insight-col">
+                          <div class="insight-info">
+                            <h6><span class="fa fa-caret-square-o-up"></span></h6>
+                            <p>20% from last week</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="insight-row">
+                        <div class="insight-col">
+                          <div class="insight-icon">
+                            <span class="fa fa-briefcase"></span>
+                          </div>
+                          <div class="insight-info">
+                            <h6>4,1 mio</h6>
+                            <p>Total income</p>
+                          </div>
+                        </div>
+                        <div class="insight-col">
+                          <div class="insight-info">
+                            <h6>1,2 mio</h6>
+                            <p>Disbursed</p>
+                          </div>
+                        </div>
+                        <div class="insight-col">
+                          <div class="insight-info">
+                            <h6>2,9 mio</h6>
+                            <p>Deposit</p>
+                          </div>
+                        </div>
+                        <div class="insight-col">
+                          <div class="insight-info">
+                            <h6><span class="fa fa-caret-square-o-up"></span></h6>
+                            <p>12% popularity</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="monthly-tab" role="tabpanel" aria-labelledby="nav-monthly-tab">
+                    <div class="insight-content">
+                      <div class="insight-row">
+                        <div class="insight-col">
+                          <div class="insight-icon">
+                            <span class="fa fa-briefcase"></span>
+                          </div>
+                          <div class="insight-info">
+                            <h6>12819</h6>
+                            <p>Total orders</p>
+                          </div>
+                        </div>
+                        <div class="insight-col">
+                          <div class="insight-info">
+                            <h6>412</h6>
+                            <p>Online orders</p>
+                          </div>
+                        </div>
+                        <div class="insight-col">
+                          <div class="insight-info">
+                            <h6>107</h6>
+                            <p>Offline orders</p>
+                          </div>
+                        </div>
+                        <div class="insight-col">
+                          <div class="insight-info">
+                            <h6><span class="fa fa-caret-square-o-up"></span></h6>
+                            <p>20% from last week</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="insight-row">
+                        <div class="insight-col">
+                          <div class="insight-icon">
+                            <span class="fa fa-briefcase"></span>
+                          </div>
+                          <div class="insight-info">
+                            <h6>4,1 mio</h6>
+                            <p>Total income</p>
+                          </div>
+                        </div>
+                        <div class="insight-col">
+                          <div class="insight-info">
+                            <h6>1,2 mio</h6>
+                            <p>Disbursed</p>
+                          </div>
+                        </div>
+                        <div class="insight-col">
+                          <div class="insight-info">
+                            <h6>2,9 mio</h6>
+                            <p>Deposit</p>
+                          </div>
+                        </div>
+                        <div class="insight-col">
+                          <div class="insight-info">
+                            <h6><span class="fa fa-caret-square-o-up"></span></h6>
+                            <p>12% popularity</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-7">
+
+                <div class="widget" id="upcoming-guest">
+                  <div class="widget-header">
+                    <h3>Upcoming Guest</h3>
+                    <div class="widget-tools">
+                      <h6>Today</h6>
+                    </div>
+                  </div>
+                  <div class="widget-content widget-full">
+                    <div class="widget-table">
+                      <table>
+                        <tr>
+                          <th>Marc Anthony</th>
+                          <td>Expendable Bromo</td>
+                          <td align="right">1</td>
+                        </tr>
+                        <tr>
+                          <th>Marc Anthony</th>
+                          <td>Expendable Bromo</td>
+                          <td align="right">1</td>
+                        </tr>
+                        <tr>
+                          <th>Marc Anthony</th>
+                          <td>Expendable Bromo</td>
+                          <td align="right">1</td>
+                        </tr>
+                        <tr>
+                          <th>Marc Anthony</th>
+                          <td>Expendable Bromo</td>
+                          <td align="right">1</td>
+                        </tr>
+                      </table>
+                      <div class="load-more text-center">
+                        <a href="#" class="btn btn-small">View more..</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- <div class="widget" id="feedback">
+                  <div class="widget-header">
+                    <h3>Feedback</h3>
+                    <div class="widget-tools">
+                      <div class="widget-review">
+                        <h4><span class="fa fa-star"></span> 4.5 - 56 reviewers</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="widget-content widget-full">
+                    <div class="widget-feedback feedback-lists">
+                      <div class="feedback-block">
+                        <div class="feedback-avatar">
+                          <img src="../img/mylogo.png" alt="COMMENT AVATAR" />
+                        </div>
+                        <div class="feedback-body">
+                          <h4>John Doe</h4>
+                          <h6>2 days ago</h6>
+                          <div class="feedback-comment">
+                            <p>Very challenging</p>
+                          </div>
+                          <div class="feedback-rating">
+                            <div class="ratings">
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star"></span>
+                            </div>
+                          </div>
+                          <a href="#" class="btn btn-feedback-reply btn-small">Reply</a>
+                        </div>
+                      </div>
+
+                      <div class="feedback-block">
+                        <div class="feedback-avatar">
+                          <img src="../img/mylogo.png" alt="COMMENT AVATAR" />
+                        </div>
+                        <div class="feedback-body">
+                          <h4>John Doe</h4>
+                          <h6>2 days ago</h6>
+                          <div class="feedback-comment">
+                            <p>Very challenging</p>
+                          </div>
+                          <div class="feedback-rating">
+                            <div class="ratings">
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star"></span>
+                            </div>
+                          </div>
+                          <a href="#" class="btn btn-feedback-reply btn-small">Reply</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div> -->
+
+              </div>
+
+              <div class="col-sm-12 col-md-12 col-lg-5">
+
+                <!-- <div class="widget" id="your-wallet">
+                  <div class="widget-header">
+                    <h3>Your Wallet</h3>
+                  </div>
+                  <div class="widget-content">
+                    <div class="widget-wallet">
+                      <div class="wallet-virtual-account">
+                        <h6>Virtual Account</h6>
+                        <h4>898000123410001</h4>
+                      </div>
+                      <div class="wallet-balance">
+                        <h6>Balance</h6>
+                        <h3>Rp 2.934.000</h3>
+                      </div>
+                      <div class="wallet-actions">
+                        <div class="row">
+                          <div class="col">
+                            <a href="#" class="btn btn-outline-primary btn-top-up btn-block">Top Up</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="btn btn-primary btn-withdraw btn-block">Withdraw</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+
+                <!-- <div class="widget" id="iklan">
+                  <div class="widget-content widget-full">
+                    <div class="ad-block">
+                      <a href="#">
+                        <img src="../img/ads.png" alt="IKLAN"/> </a>
+                    </div>
+                  </div>
+                </div> -->
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="../lib/js/jquery-slim.min.js"></script>
+  <script src="../lib/js/bootstrap.min.js"></script>
+  <script src="../js/operator.js"></script>
+</body>
+
+</html>

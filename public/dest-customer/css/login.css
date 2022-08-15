@@ -1,0 +1,36 @@
+#login {
+  background: url(../img/client-bg.jpg) no-repeat center;
+  background-size: cover;
+}
+.login-panel {
+  padding: 1rem 3rem 1.5rem;
+  width: 480px;
+  max-width: 100%;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .login-panel {
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: auto;
+    padding: 1rem 1.5rem;
+  }
+}
+.login-panel .logo {
+  text-align: center;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+.login-panel .logo img {
+  margin-bottom: 1rem;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .login-panel .logo {
+    margin-bottom: 0;
+  }
+}
+.login-panel p {
+  margin: 0;
+}
+.login-panel p a {
+  color: rgba(0, 0, 0, 0.54);
+}

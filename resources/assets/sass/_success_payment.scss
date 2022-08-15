@@ -1,0 +1,12 @@
+#payment-success{
+  .title-success{
+    font-size: 30px;
+    font-weight: bold;
+    @media all and (max-width: 767px){
+      font-size: 20px;
+    }
+    @media all and (max-width: 480px){
+      font-size: 18px;
+    }
+  }
+}

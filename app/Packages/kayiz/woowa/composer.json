@@ -1,0 +1,30 @@
+{
+    "name": "kayiz/woowa",
+    "authors": [
+        {
+            "name": "Karisma Prabakuncara",
+            "email": "h.karisma.p@hotmail.com"
+        }
+    ],
+    "require": {},
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Kayiz\\WoowaServiceProvider"
+            ],
+            "aliases": {
+                "Kayiz\\": "Kayiz\\Facades\\WoowaFacade"
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Kayiz\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

@@ -1,0 +1,52 @@
+#payment-virtual-account {
+  .count-down {
+    display: inline-block;
+    padding: 1.5rem;
+    @media all and(max-width: 767px) {
+      //display: block;
+      padding: 0.5rem;
+    }
+    .number {
+      font-size: 40px;
+      font-weight: bold;
+    }
+  }
+  .bank-list {
+    .virtual-account {
+      h2, h3, h4 {
+        color: $primaryBlue;
+      }
+
+    }
+  }
+  .card-body {
+    .caption {
+      font-weight: bold;
+      padding: .5rem;
+    }
+    a.backHome {
+      font-weight: bold;
+      color: #5a95f5;
+      padding: .5rem 1.3rem;
+      border: 2px solid #5a95f5;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      @media all and (max-width: 767px) {
+        font-size: smaller;
+        order: 1;
+      }
+    }
+  }
+  .card {
+    .card-header {
+      height: auto;
+      background-color: $lightBlue;
+    }
+  }
+}
+.card-payment ol li{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size:14px;
+}

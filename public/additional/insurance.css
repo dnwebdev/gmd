@@ -1,0 +1,113 @@
+@media (min-height: 33.875em) {
+    .picker--opened .picker__frame {
+        top: 50%!important;
+        transform: translateY(-50%)!important;
+    }
+}
+
+.row.insurance-content {
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: 40px;
+    margin-bottom: -23px;
+    /*font-size: smaller;*/
+    padding: 8px;
+}
+.row.insurance-content.bg-light-blue h3{
+    font-size: 16px;
+}
+.form-control{
+    /*font-size: 14px;*/
+}
+
+.klhk.custom-control-input:checked~.custom-control-label::before{
+    border-color: #00C643;
+    background-color: #00C643;
+}
+.picker__box .picker__header .picker__select--month, .picker__box .picker__header .picker__select--year{
+    height: 24px;
+    font-size: 16px;
+}
+
+.picker__box .picker__header .picker__nav--next:hover, .picker__box .picker__header .picker__nav--prev:hover{
+    background: none!important;
+}
+.picker__box .picker__header .picker__nav--next{
+    padding-left: 0;
+}
+
+.picker__box .picker__header .picker__nav--prev{
+    padding-right: 0;
+}
+
+.picker__box .picker__header .picker__nav--prev:before {
+    content: " ";
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-right: 10px solid #676767;
+    width: 0;
+    height: 0;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 17px;
+}
+
+.picker__box .picker__header .picker__nav--next:before{
+    content: " ";
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 10px solid #676767;
+    width: 0;
+    height: 0;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 17px;
+    right:38px!important;
+}
+.col-participants{
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.picker__box .picker__header .picker__select--month, .picker__box .picker__header .picker__select--year {
+    height: 32px;
+    padding: 0;
+    font-size: .8125rem;
+    font-weight: 400;
+    line-height: 1.5385;
+    color: #333;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 1px solid #ddd;
+    border-radius: 0;
+    box-shadow: 0 0 0 0 transparent;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    background-clip: border-box;
+    border-width: 2px 0;
+    border-top-color: transparent!important;
+    border-radius: 0;
+    text-align: center;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+.picker__box .picker__header .picker__select--month:focus, 
+.picker__box .picker__header .picker__select--year:focus {
+    outline: none;
+    border-color: #3c96f3;
+}
+
+.picker__box .picker__table .picker__day--selected,
+.picker__box .picker__table .picker__day--selected:hover {
+    border-radius: 3px;
+}
+.picker__day--highlighted {
+    border-radius: 3px;
+}
+.picker__day--infocus:hover {
+    border-radius: 3px;
+}
+.insurance-wrapper .custom-control-label {
+    cursor: pointer;
+}

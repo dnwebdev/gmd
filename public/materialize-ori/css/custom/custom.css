@@ -1,0 +1,63 @@
+/*================================================================================
+	Item Name: Materialize - Material Design Admin Template
+	Version: 3.1
+	Author: GeeksLabs
+	Author URL: http://www.themeforest.net/user/geekslabs
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN CSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+
+
+img.disabled {
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+}
+
+/* Disable grayscale on hover */
+.card-image:hover img.disabled{
+  -webkit-filter: grayscale(0);
+  filter: none;
+}
+
+
+.card-image .btn-large i{
+	font-size:3.6rem;
+}
+
+
+.card-image .btn-large i{
+	font-size:3.6rem;
+}
+
+
+.card-image .btn-floating.disabled{
+	display: none;
+}
+
+
+.animated.fast{
+	animation-duration: 0.3s;
+}
+
+.unset-position{
+	position: unset !important;
+}
+
+.modal-large{
+	width: 90%;		
+}
+
+.card.horizontal{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
+
+.text-mute{
+	font-size:0.8rem;
+}
+
+
+.tabs .tab.active {
+    border-bottom: 2px solid;
+}

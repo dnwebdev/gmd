@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Gomodo">
+  <meta name="author" content="Ervandra Halim">
+  <link rel="icon" href="favicon.ico">
+  <title>Product Detail | Gomodo for Business</title>
+  <link href="../lib/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../lib/css/fontface.min.css" rel="stylesheet">
+  <link href="../lib/css/chosen.min.css" rel="stylesheet">
+  <link href="../css/index.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header id="header" class="dashboard-nav">
+    <div class="navigation">
+      <div class="dashboard-logo">
+        <a href="#"><img src="../img/mylogo.png" alt="GOMODO"></a>
+      </div>
+      <div class="dashboard-profile">
+        <!-- <div class="profile-image">
+          <img src="../img/profile-picture.png" alt="PROFILE">
+        </div> -->
+        <div class="profile-info">
+          <h3>Tripad Travel</h3>
+          <h5>Adventurer</h5>
+        </div>
+      </div>
+      <div class="dashboard-menu-toggle">
+        <button class="dashboard-toggle" data-toggle="collapse" data-target="#dashboard-menu"><span class="fa fa-bars"></span></button>
+      </div>
+      <div class="dashboard-menu collapse" id="dashboard-menu">
+        <nav id="mainmenu">
+          <ul>
+            <li><a href="dashboard.html"><span class="fa fa-dashboard"></span>Dashboard</a></li>
+            <li><a href="order.html"><span class="fa fa-briefcase"></span>Order</li>
+            <li class="active"><a href="product.html"><span class="fa fa-archive"></span>Product</a></li>
+            <li><a href="settings.html"><span class="fa fa-link"></span>Settings</a></li>
+            <li><a href="help.html"><span class="fa fa-question-circle"></span>Help</a></li>
+          </ul>
+        </nav>
+        <nav class="sticky-nav">
+          <ul>
+            <li><a href="#"><span class="fa fa-sign-out"></span>Log Out</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section id="content">
+    <div class="dashboard-header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <div class="dashboard-title">
+              <h1>Product Detail</h1>
+              <div class="dashboard-tools">
+                <div class="breadcrumbs">
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li>Product Detail</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dashboard-content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <form action="#">
+              
+              <div class="dashboard-cta">
+                <a href="product-detail.html" class="btn btn-primary btn-cta" data-toggle="modal" data-target="#successModal">Save</a>
+              </div>
+
+              <div class="widget" id="product-detail">
+                <div class="widget-header">
+                  <h3>Product Detail</h3>
+                </div>
+                <div class="widget-content">
+                  <div class="widget-form">
+
+                    <div class="row">
+                      <div class="col-sm-12 col-md-12 col-lg-6 col-xl-5">
+                        <div class="form-group">
+                          <label for="pname">Product Name</label>
+                          <input type="text" id="pname" name="pname" class="form-control" value="Expendable Bromo" />
+                        </div>
+
+                        <div class="form-group">
+                          <label for="guide-language">Product Category</label>
+                          <select name="guide-language" id="guide-language" class="form-control chosen-select" multiple>
+                            <option value="0" selected>Camping</option>
+                            <option value="1">Caving</option>
+                            <option value="3">Climbing</option>
+                          </select>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="plocation">Location</label>
+                          <div class="form-with-icon">
+                            <span class="form-icon"><span class="fa fa-map-marker"></span></span>
+                            <input type="text" class="form-control" id="plocation" name="plocation" placeholder="Location"
+                              value="Malang, Jawa Timur" />
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="guide-language">Guide Language</label>
+                          <select name="guide-language" id="guide-language" class="form-control chosen-select" multiple>
+                            <option value="0" selected>Indonesia</option>
+                            <option value="1">English</option>
+                            <option value="3">France</option>
+                          </select>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="ptype">Type</label>
+                          <select id="ptype" name="ptype" class="form-control">
+                            <option value="0">One day trip</option>
+                            <option value="1" selected>Multi day trip</option>
+                          </select>
+                        </div>
+
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-6 col-xl-7">
+                        <div class="form-group">
+                          <label for="pabout">About this product</label>
+                          <textarea name="pabout" id="pabout" rows="7" class="form-control">Mount Bromo (Indonesian: Gunung Bromo), is an active volcano and part of the Tengger massif, in East Java, Indonesia. At 2,329 metres (7,641 ft) it is not the highest peak of the massif, but is the most well known. The massif area is one of the most visited tourist attractions in East Java, Indonesia. The volcano belongs to the Bromo Tengger Semeru National Park. The name of Bromo derived from Javanese pronunciation of Brahma, the Hindu creator god.</textarea>
+                        </div>
+                        <div class="form-group">
+                          <label for="pmeeting">Meeting Point</label>
+                          <div class="embed-responsive embed-responsive-21by9">
+                            <div id="map_canvas" class="embed-responsive-item">
+                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15806.180045972262!2d112.94425743665883!3d-7.942493358463892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd637aaab794a41%3A0xada40d36ecd2a5dd!2sMt+Bromo!5e0!3m2!1sen!2sid!4v1539158664137"
+                                width="800" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product Availbility -->
+              <div class="widget" id="order-guest">
+                <div class="widget-header">
+                  <h3>Product Availbility</h3>
+                </div>
+                <div class="widget-content">
+                  <form action="#" class="form-group-no-margin">
+                    <div class="row">
+                      <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                          <div class="form-group">
+                            <label for="nationality">Date Available</label>
+                            <select class="form-control" id="date-available" name="date-available">
+                              <option value="1">Fixed dates</option>
+                              <option value="2">Always Available</option>
+                            </select>
+                          </div>
+                      </div>
+                    </div>
+                    
+                    <!-- product date -->
+                    <div class="row">
+                      <!-- start date -->
+                      <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                        <div class="form-group">
+                          <label for="start-date">Start Date</label>
+                          <input type="text" class="form-control" id="start-date" name="start-date"/>
+                        </div>
+                      </div>
+                      <!-- end date -->
+                      <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                        <div class="form-group">
+                          <label for="end-date">End Date</label>
+                          <input type="text" class="form-control" id="end-date" name="end-date"/>
+                        </div>
+                      </div>
+                      <!-- days count -->
+                      <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                        <div class="row days-group">
+                          <div class="col">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Sun
+                            </label>
+                          </div>
+                          <div class="col">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Mon
+                            </label>
+                          </div>
+                          <div class="col">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Tue
+                            </label>
+                          </div>
+                          <div class="col">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Wed
+                            </label>
+                          </div>
+                          <div class="col">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Thu
+                            </label>
+                          </div>
+                          <div class="col">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Fri
+                            </label>
+                          </div>
+                          <div class="col">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Sat
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                        <button type="button" class="btn-success btn-sm btn-add">Add date</button>
+                      </div>
+                    </div>
+                    <hr class="full-hr">
+                    <div class="row">
+                      <!-- start date -->
+                      <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                        <div class="form-group">
+                          <label for="start-date">Start Date</label>
+                          <input type="text" class="form-control" id="start-date" name="start-date"/>
+                        </div>
+                      </div>
+                      <!-- end date -->
+                      <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                        <div class="form-group">
+                          <label for="end-date">End Date</label>
+                          <input type="text" class="form-control" id="end-date" name="end-date"/>
+                        </div>
+                      </div>
+                      <!-- days count -->
+                      <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                        <div class="row days-group">
+                          <div class="col">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Sun
+                            </label>
+                          </div>
+                          <div class="col">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Mon
+                            </label>
+                          </div>
+                          <div class="col">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Tue
+                            </label>
+                          </div>
+                          <div class="col">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Wed
+                            </label>
+                          </div>
+                          <div class="col">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Thu
+                            </label>
+                          </div>
+                          <div class="col">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Fri
+                            </label>
+                          </div>
+                          <div class="col">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Sat
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                        <button type="button" class="btn-danger btn-sm btn-add">Delete date</button>
+                      </div>
+                    </div>
+
+                    <hr class="full-hr">
+                    <div class="row">
+                      <div class="col-sm-12 col-md-12 col-lg-3">
+                        <div class="form-group">
+                          <label for="min-order">Min.Order</label>
+                          <input type="number" class="form-control" id="min-order" name="min-order"/>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-3">
+                        <div class="form-group">
+                          <label for="max-order">Max.Order</label>
+                          <input type="number" class="form-control" id="max-order" name="max-order"/>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-3">
+                        <div class="form-group">
+                          <label for="max-order">Min.People</label>
+                          <input type="number" class="form-control" id="max-order" name="max-order"/>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-3">
+                        <div class="form-group">
+                          <label for="max-order">Max.People</label>
+                          <input type="number" class="form-control" id="max-order" name="max-order"/>
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="full-hr">
+                    <div class="row">
+                      <div class="col-sm-12 col-md-12 col-lg-3">
+                        <div class="form-group">
+                          <label for="min-notice">Min.Notice (Days)</label>
+                          <input type="number" class="form-control" id="min-notice" name="min-notice"/>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-3">
+                        <div class="form-group">
+                          <label for="booking-confirmation">Booking Confirmation</label>
+                          <select id="booking-confirmation" name="booking-confirmation" class="form-control">
+                            <option value="0">Manual</option>
+                            <option value="1">Automatically</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-3">
+                        <div class="form-group">
+                          <label for="product-status">Product Status</label>
+                          <select id="product-status" name="product-status" class="form-control">
+                            <option value="0">Active</option>
+                            <option value="1">Non-Active</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-3">
+                        <div class="form-group multiple-form">
+                          <label for="product-status">Publish Product</label>
+                          <select id="product-status" name="product-status" class="form-control">
+                            <option value="0">Yes</option>
+                            <option value="1">No</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+              <!-- Product Pricing -->
+              <div class="widget" id="order-guest">
+                <div class="widget-header">
+                  <h3>Product Pricing</h3>
+                </div>
+                <div class="widget-content">
+                  <form action="#">
+                    <div class="row">
+                      <div class="col-sm-12 col-md-12 col-lg-6 ">
+                        <div class="form-group">
+                          <label for="currency">Currency</label>
+                          <select id="currency" name="currency" class="form-control">
+                            <option value="0">IDR</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-6">
+                        <div class="form-group multiple-form">
+                          <label for="advert-price">Advertised Price</label>
+                          <input type="number" class="form-control" id="advert-price" name="advert-price"/>
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="full-hr">
+                    <div class="row">
+                      <div class="col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group">
+                            <label for="discount-name">Discount Name</label>
+                            <input type="text" class="form-control" id="discount-name" name="discount-name"/>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group">
+                          <label for="discount-type">Discount Amount Type</label>
+                          <select id="discount-type" name="discount-type" class="form-control">
+                            <option value="0">Fixed Amount</option>
+                            <option value="0">Percentage %</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group">
+                          <label for="discount-amount">Discount Amount</label>
+                          <input type="number" class="form-control" id="discount-amount" name="discount-amount"/>
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="full-hr">
+                    <!-- Price type -->
+                    <div class="row">
+                      <div class="col-sm-12 col-md-12 col-lg-2">
+                        <div class="form-group ">
+                          <label for="guest-nationality">Price Type</label>
+                          <select id="guest-nationality" name="guest-nationality-1" class="form-control">
+                            <option value="0">Everyone</option>
+                            <option value="1">Adult</option>
+                            <option value="2">Children</option>
+                            <option value="2">Infant</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-2">
+                        <div class="form-group">
+                          <label for="min-order">Price</label>
+                          <input type="number" class="form-control" id="min-order" name="min-order"/>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-2">
+                        <div class="form-group">
+                          <label for="min-order">From</label>
+                          <input type="number" class="form-control" id="min-order" name="min-order"/>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-2">
+                        <div class="form-group">
+                          <label for="min-order">Until</label>
+                          <input type="number" class="form-control" id="min-order" name="min-order"/>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-2">
+                        <button type="button" class="btn-success btn-sm btn-add">Add Price Type</button>
+                      </div>
+                    </div>
+                    <hr class="full-hr">
+                    <!-- Price type -->
+                    <div class="row">
+                      <div class="col-sm-12 col-md-12 col-lg-2">
+                        <div class="form-group ">
+                          <label for="guest-nationality">Price Type</label>
+                          <select id="guest-nationality" name="guest-nationality-1" class="form-control">
+                            <option value="0">Everyone</option>
+                            <option value="1">Adult</option>
+                            <option value="2">Children</option>
+                            <option value="2">Infant</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-2">
+                        <div class="form-group">
+                          <label for="min-order">Price</label>
+                          <input type="number" class="form-control" id="min-order" name="min-order"/>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-2">
+                        <div class="form-group">
+                          <label for="min-order">From</label>
+                          <input type="number" class="form-control" id="min-order" name="min-order"/>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-2">
+                        <div class="form-group">
+                          <label for="min-order">Until</label>
+                          <input type="number" class="form-control" id="min-order" name="min-order"/>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-2">
+                        <button type="button" class="btn-danger btn-sm btn-add">Delete Price Type</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+              <!-- Image uplaod -->
+              <div class="widget" id="images">
+                <div class="widget-header">
+                  <h3>Images</h3>
+                </div>
+                <div class="widget-content">
+                  <div class="widget-form">
+                    <div class="custom-image-gallery">
+                      <div class="widget-image">
+                        <div class="widget-image-upload image-item">
+                          <input type="file" class="custom-file-upload">
+                          <div class="custom-file-placeholder">
+                            <span class="fa fa-upload"></span>
+                            <span class="text">Upload new image</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="widget-image">
+                        <div class="image-item is-main-thumbnail">
+                          <img src="../img/bromo-img.png" alt="PRODUCT IMG" />
+                          <div class="image-overlay">
+                            <button class="btn btn-tools" onclick="alert('removed');">Remove</button>
+                            <button class="btn btn-tools" onclick="alert('thumbnail');">Thumbnail</button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="widget-image">
+                        <div class="image-item">
+                          <img src="../img/bromo-img.png" alt="PRODUCT IMG" />
+                          <div class="image-overlay">
+                            <button class="btn btn-tools" onclick="alert('removed');">Remove</button>
+                            <button class="btn btn-tools" onclick="alert('thumbnail');">Thumbnail</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="widget-image">
+                        <div class="image-item">
+                          <img src="../img/bromo-img.png" alt="PRODUCT IMG" />
+                          <div class="image-overlay">
+                            <button class="btn btn-tools" onclick="alert('removed');">Remove</button>
+                            <button class="btn btn-tools" onclick="alert('thumbnail');">Thumbnail</button>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="widget" id="itinerary">
+                <div class="widget-header">
+                  <h3>Itinerary</h3>
+                  <div class="widget-tools">
+                    <a href="#" class="btn btn-small">Add Day</a>
+                  </div>
+                </div>
+                <div class="widget-content">
+                  <div class="widget-form">
+                    <div class="form-group">
+                      <label for="day-1">Day 1</label>
+                      <textarea name="day-1" id="day-1" rows="4" class="form-control">
+07.45 		: Tiba di kota malang (Bagi peserta yg naik ka matarmaja)
+08.00  		: Meeting point & kordinasi peserta di stasiun malang (Kota Baru)
+09.00 		: Wisata Candi Jago Tumpang
+10.30 		: Menuju Homestay (Check In)
+                      </textarea>
+                    </div>
+                    <div class="form-group">
+                      <label for="day-2">Day 2</label>
+                      <textarea name="day-2" id="day-2" rows="4" class="form-control">
+12.00 		: Istirahat – Sholat - Makan (Include)
+12.30 		: Persiapan River Tubing
+13.30		: Kegiatan River Tubing dengan rute pengarungan 4km
+15.30		: Selesai River Tubing & kembali ke Homestay (Mandi Bilas2 & Istirahat)
+                        </textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal save -->
+  <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+      <div class="modal-content modal-gomodo">
+        <div class="modal-body text-center">
+          <h3>Congratulation!</h3>
+          <h5 class="modal-icon">
+            <img src="../img/icons/success.png" alt="SUCCESS">
+          </h5>
+          <p>Your product has already create successfully</p>
+          <a class="btn" href="product.html">Close</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../lib/js/jquery-slim.min.js"></script>
+  <script src="../lib/js/bootstrap.min.js"></script>
+  <script src="../lib/js/chosen.jquery.min.js"></script>
+  <script src="../js/operator.js"></script>
+  <script>
+    jQuery(document).ready(function (e) {
+      jQuery(".chosen-select").chosen();
+    })
+  </script>
+</body>
+
+</html>

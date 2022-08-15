@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="facebook" width="38" height="38" viewBox="0 0 38 38">
+    <defs>
+        <style>
+            .cls-1{fill:#f3f4f4}
+        </style>
+    </defs>
+    <path id="facebook-2" d="M37.91 2H4.09A2.09 2.09 0 0 0 2 4.09v33.82A2.09 2.09 0 0 0 4.09 40h18.2V25.275h-4.94v-5.7h4.94V15.3a6.916 6.916 0 0 1 7.372-7.6 38.495 38.495 0 0 1 4.427.228v5.13H31.07c-2.394 0-2.85 1.14-2.85 2.793v3.667h5.7l-.741 5.7H28.22V40h9.69A2.09 2.09 0 0 0 40 37.91V4.09A2.09 2.09 0 0 0 37.91 2z" class="cls-1" data-name="facebook" transform="translate(-2 -2)"/>
+</svg>

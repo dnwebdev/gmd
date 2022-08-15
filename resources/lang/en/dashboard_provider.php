@@ -1,0 +1,41 @@
+<?php
+
+return [
+    // Dashboard
+    'dashboard' => 'Performance',
+    'insights' => 'Revenue',
+    'total_orders' => 'Total Orders',
+    'incoming_orders_value' => 'Incoming Orders Value',
+    'total_income' => 'Total Income',
+    'online_orders_value' => 'Total Online Payment',
+    'offline_orders_value' => 'Total Offline Payment',
+    'upcoming_guest' => 'Upcoming Guest',
+    'latest_blog' => 'Latest Article',
+    'best_seller' => 'Best Selling Product',
+    'booked' => 'ordered',
+    'total_guest' => 'Total Visitor',
+    'empty_top_product' => 'No best selling product yet. <br> All orders of your product will appear here.',
+    'empty_upcoming_guest' => 'No upcoming guests yet <br> All orders of your product will appear here.',
+    'empty_article' => 'No Article yet <br> all articles will appear here',
+    'unread' => 'Unread',
+    'saldo' => 'Balance',
+    'incoming_reimbursement' => 'Pending Reimbursement',
+    'total_reimbursement' => 'Total reimbursed',
+    'incoming_settlement' => 'Pending Settlement',
+    'withdraw' => 'Withdraw',
+    'incoming_reimbursement_tooltip' => 'Reduction for each voucher  reimbursed  to your balance weekly',
+    'incoming_total_guest' => 'Total visitor on your website',
+    'incoming_settlement_tooltip' => 'Transactional fund on hold bank  for 5-7 days due to customer paid either via credit card or Alfamart',
+    'saldo_tooltip' => 'The funds you are able to withdraw, transfer, and use',
+    'table_product_name' => 'Product Name',
+    'table_date' => 'date',
+    'table_location' => 'Location',
+    'table_quantity' => 'Quantity',
+    'table_status' => 'Status',
+    'max_char' => 'Max Character:',
+    'view_detail' => 'View Detail',
+
+    // Floating whatsapp
+    'whatsapp_us' => 'Gomodo Whatsapp',
+    'medium' => 'Our Blog', 
+];

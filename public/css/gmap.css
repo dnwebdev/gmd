@@ -1,0 +1,25 @@
+#map {
+    height: 600px;
+}
+
+/*#pac-input {*/
+/*    margin: 15px !important;*/
+/*    padding: 13px !important;*/
+/*}*/
+
+/*@media (max-width: 767px) and (min-width: 320px) {*/
+    .gm-style #pac-input, .gm-style #pac-input-gamification {
+        background-color: #fff;
+        position: sticky;
+        z-index: 999999 !important;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        text-overflow: ellipsis;
+        left: 0 !important;
+        transform: none;
+        width: calc(100% - 64px);
+        margin: 9px !important;
+        padding: 10px !important;
+    }
+/*}*/

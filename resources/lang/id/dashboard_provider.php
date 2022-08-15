@@ -1,0 +1,41 @@
+<?php
+
+return [
+    // Dashboard
+    'dashboard' => 'Performa',
+    'insights' => 'Penghasilan',
+    'total_orders' => 'Jumlah Pemesanan',
+    'incoming_orders_value' => 'Nilai Pemesanan Masuk',
+    'total_income' => 'Total pendapatan',
+    'online_orders_value' => 'Total Pembayaran Online',
+    'offline_orders_value' => 'Total Pembayaran Offline',
+    'upcoming_guest' => 'Tamu yang akan Datang',
+    'latest_blog' => 'Artikel terbaru',
+    'best_seller' => 'Produk Terlaris',
+    'booked' => 'total dipesan',
+    'total_guest' => 'Total Pengunjung',
+    'empty_top_product' => 'Belum ada produk terlaris. <br> Semua pemesanan produk terlaris Anda akan muncul di sini.',
+    'empty_upcoming_guest' => 'Belum ada tamu yang akan datang. <br> Semua pemesanan produk Anda akan muncul di sini.',
+    'empty_article' => 'Belum terdapat artikel <br> artikel akan muncul disini',
+    'unread' => 'Belum dibaca',
+    'saldo' => 'Saldo',
+    'incoming_reimbursement' => 'Voucher dari Gomodo',
+    'total_reimbursement' => 'Voucher Gomodo terbayar',
+    'incoming_settlement' => 'Pembayaran Sedang Diproses',
+    'withdraw' => 'Penarikan',
+    'incoming_reimbursement_tooltip' => 'Potongan harga untuk setiap voucher yang dibayarkan ke saldo Anda setiap minggunya',
+    'incoming_total_guest' => 'Total pengunjung website Anda',
+    'incoming_settlement_tooltip' => 'Dana transaksi oleh pelanggan melalui Alfamart atau kartu kredit yang ditahan di bank dalam waktu 5- 7 hari',
+    'saldo_tooltip' => 'Dana yang dapat ditarik, ditransfer, dan digunakan dari akun Anda',
+    'table_product_name' => 'Nama Produk',
+    'table_date' => 'Tanggal',
+    'table_location' => 'Lokasi',
+    'table_quantity' => 'Jumlah',
+    'table_status' => 'Status',
+    'max_char' => 'Maks. Karakter:',
+    'view_detail' => 'Lihat Detail',
+
+    // Floating whatsapp
+    'whatsapp_us' => 'Whatsapp Gomodo',
+    'medium' => 'Blog Kami',
+];

@@ -1,0 +1,327 @@
+@extends('landing.landing_base_layout')
+
+@section('content')
+    <div class="header-dark" id="topmost">
+        <div class="container hero">
+            <div class="row">
+                <div class="col">
+                    <h1 class="hero-tagline">{!! trans('landing.new.header.title') !!}</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p class="tagline-desc">
+                        {{trans('landing.new.header.subtitle')}}
+                    </p>
+                </div>
+            </div>
+            <form method="GET" action="{{route('memoria.register')}}">
+                <div class="row">
+{{--                    <div class="cta-form mt-md-3  col-md-4">--}}
+{{--                        <input type="email" class="form-control" name="email" required autocomplete="off">--}}
+{{--                        <label class="form-control-placeholder"--}}
+{{--                               for="email">{{trans('landing.home.email_placeholder')}}</label>--}}
+{{--                    </div>--}}
+                    <div class="mt-3 col-md-4">
+                        <button class="btn btn-primary">{{trans('landing.home.button')}}</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="photo-gallery why-gomodo" id="section1">
+        <!-- Modal -->
+        <div class="modal fade stay-update-modal" id="stayUpToDate" tabindex="-1" role="dialog" aria-labelledby="stayUpToDateTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <img class="stay-update-close" src="{{ asset('landing/img/close-stay-update.svg') }}" alt="close"/>
+                    </button>
+                    <div class="modal-body p-0">
+                        <img class="stay-update-rocket img-fluid" src="{{ asset('landing/img/roket-chicken.svg') }}" alt="Gomodo Update" />
+                        <img class="stay-update-clouds img-fluid" src="{{ asset('landing/img/rocket-clouds.svg') }}" alt="Gomodo Update" />
+                        <div class="background-white text-center update-position-relative">
+                            <div class="text-absolute-container m-auto">
+                                <h3>Hai Pemilik Jasa & Wisata</h3>
+                                <h2 class="pt-0">Saat ini Gomodo sedang Berevolusi</h2>
+                                <p class="m-0">Kami sedang menciptakan formula yang terbaik untuk bisnis Anda. Pantau terus untuk menikmati fitur-fitur baru Gomodo yang akan datang sehingga semakin memudahkan bisnis jasa & wisata Anda.</p>
+                            </div>
+                            <img class="stay-update-clouds-2 img-fluid" src="{{ asset('landing/img/rocket-clouds2.svg') }}" alt="Gomodo Update" />
+                            <img class="stay-update-tree right img-fluid" src="{{ asset('landing/img/tree.svg') }}" alt="Gomodo Update" />
+                            <img class="stay-update-tree left img-fluid" src="{{ asset('landing/img/tree.svg') }}" alt="Gomodo Update" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">{!! trans('landing.new.why_gomodo.title') !!}</h2>
+                <p class="text-center">{{trans('landing.new.why_gomodo.subtitle')}}</p>
+            </div>
+            <div class="card-group why-gomodo">
+                <div class="card thumb-why-gomodo">
+                    <div class="card-body">
+                        <h4 class="card-title">{{trans('landing.new.before_using_gomodo')}}</h4>
+                        <ul class="list-group compare">
+                            <li class="list-group-item">
+                                <i class="fa fa-frown-o"></i>
+                                <span class="title">{{str_limit(trans('landing.before.content.high_budget'),30)}}</span>
+                                <span class="content">{{trans('landing.before.content.high_budget')}}</span>
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fa fa-frown-o"></i>
+                                <span class="title">{{str_limit(trans('landing.before.content.offline_booking'),30)}}</span>
+                                <span class="content">{{trans('landing.before.content.offline_booking')}}</span>
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fa fa-frown-o"></i>
+                                <span class="title">{{str_limit(trans('landing.before.content.offline_payment'),30)}}</span>
+                                <span class="content">{{trans('landing.before.content.offline_payment')}}</span>
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fa fa-frown-o"></i>
+                                <span class="title">{{str_limit(trans('landing.before.content.ineffective_selling'),30)}}</span>
+                                <span class="content">{{trans('landing.before.content.ineffective_selling')}}</span>
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fa fa-frown-o"></i>
+                                <span class="title">{{str_limit(trans('landing.before.content.no_historical'),30)}}</span>
+                                <span class="content">{{trans('landing.before.content.no_historical')}}</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="badge badge-primary">VS</div>
+                <div class="card thumb-why-gomodo">
+                    <div class="card-body">
+                        <h4 class="card-title">{{trans('landing.new.after_using_gomodo')}}</h4>
+                        <ul class="list-group compare">
+                            <li class="list-group-item">
+                                <i class="fa fa-smile-o"></i>
+                                <span class="title">{{str_limit(trans('landing.after.content.free_budget'),30)}}</span>
+                                <span class="content">{{trans('landing.after.content.free_budget')}}</span>
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fa fa-smile-o"></i>
+                                <span class="title">{{str_limit(trans('landing.after.content.online_booking'),30)}}</span>
+                                <span class="content">{{trans('landing.after.content.online_booking')}}</span>
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fa fa-smile-o"></i>
+                                <span class="title">{{str_limit(trans('landing.after.content.online_payment'),30)}}</span>
+                                <span class="content">{{trans('landing.after.content.online_payment')}}</span>
+    
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fa fa-smile-o"></i>
+                                <span class="title">{{str_limit(trans('landing.after.content.effective_selling'),30)}}</span>
+                                <span class="content">{{trans('landing.after.content.effective_selling')}}</span>
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fa fa-smile-o"></i>
+                                <span class="title">{{str_limit(trans('landing.after.content.historical'),30)}}</span>
+                                <span class="content">{{trans('landing.after.content.historical')}}</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="features-boxed one-platform-rule" id="section-2">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">{{trans('landing.new.one_platform.title')}}</h2>
+                <p class="text-center">{{trans('landing.new.one_platform.subtitle')}}</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <div class="feature-img-container">
+                        <img src="{{asset('landing/img/checklist.png')}}" class="feature-img">
+                    </div>
+                    <p class="font-weight-bold">{!! trans('landing.new.one_platform.content.fill_the_form.title') !!}</p>
+                    <p>{!! trans('landing.new.one_platform.content.fill_the_form.subtitle') !!}</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="feature-img-container">
+                        <img src="{{asset('landing/img/website.png')}}" class="feature-img">
+                    </div>
+                    <p class="font-weight-bold">{!! trans('landing.new.one_platform.content.create_your_product.title') !!}</p>
+                    <p>{!! trans('landing.new.one_platform.content.create_your_product.subtitle') !!}</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="feature-img-container">
+                        <img src="{{asset('landing/img/startup.png')}}" class="feature-img">
+                    </div>
+                    <p class="font-weight-bold">{!! trans('landing.new.one_platform.content.ready_to_go_online.title') !!}</p>
+                    <p>{!! trans('landing.new.one_platform.content.ready_to_go_online.subtitle') !!}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="features-boxed feature" id="section3">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">{{trans('landing.new.features.title')}} </h2>
+                <p class="text-center">{{trans('landing.new.features.subtitle')}}</p>
+            </div>
+            <div class="row justify-content-center features">
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box feature-box"><img class="icon-feature" src="landing/img/smartphone.png">
+                        <h3 class="name">{{trans('landing.new.features.content.do_everything_on_your_smartphone.title')}}</h3>
+                        <p class="description">{{trans('landing.new.features.content.do_everything_on_your_smartphone.subtitle')}}</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box feature-box"><img class="icon-feature" src="landing/img/conversation.png">
+                        <h3 class="name">{{trans('landing.new.features.content.communicate_directly_with_customers.title')}} </h3>
+                        <p class="description">{{trans('landing.new.features.content.communicate_directly_with_customers.subtitle')}}</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box feature-box"><img class="icon-feature" src="landing/img/computer.png">
+                        <h3 class="name">{{trans('landing.new.features.content.receive_online_bookings.title')}}</h3>
+                        <p class="description">{{trans('landing.new.features.content.receive_online_bookings.subtitle')}}</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box feature-box"><img class="icon-feature" src="landing/img/invoice.png">
+                        <h3 class="name">{{trans('landing.new.features.content.send_e_invoices.title')}}</h3>
+                        <p class="description">{{trans('landing.new.features.content.send_e_invoices.subtitle')}}</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box feature-box"><img class="icon-feature" src="landing/img/hand.png">
+                        <h3 class="name">{{trans('landing.new.features.content.receive_payments_online.title')}}</h3>
+                        <p class="description">{{trans('landing.new.features.content.receive_payments_online.subtitle')}}</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box feature-box"><img class="icon-feature" src="landing/img/voucher.png">
+                        <h3 class="name">{{trans('landing.new.features.content.redeemable_voucher_codes.title')}}</h3>
+                        <p class="description">{{trans('landing.new.features.content.redeemable_voucher_codes.subtitle')}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-bs-parallax-bg="true" class="article-list parallax-bg">
+        <div class="container">
+            <div class="row text-contaner">
+                <div class="col-sm-12 text-center">
+                    <div class="in-text-contaner">
+                        <div class="additional">
+                            <h3>
+                                {!! trans('landing.new.features.content.additional.title') !!}
+                            </h3>
+                            <p >
+                                {!! trans('landing.new.features.content.additional.subtitle') !!}
+                            </p>
+                            <p>
+                                {!! trans('landing.new.features.content.additional.blog') !!} <a href="https://medium.com/gomodo" target="_blank">{!! trans('landing.new.features.content.additional.click') !!}</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact-clean container-fluid" id="section4">
+        <div class="row">
+            <div class="col-md-6">
+                <form method="post" autocomplete="off" id="form-contact-us" novalidate>
+                    <h2 class="text-center">{{trans('landing.new.form_and_testimonial.title')}}</h2>
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="name"> 
+                        <label class="form-control-placeholder" for="name">{{trans('landing.name')}}</label>
+                        {!! csrf_field() !!}
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="email" name="email">
+                        <label class="form-control-placeholder" for="email">Email</label></div>
+                    <div class="form-group"><textarea class="form-control" rows="14" name="message"></textarea>
+                        <label class="form-control-placeholder" for="message">{{trans('landing.message')}}</label></div>
+                    <div class="g-recaptcha" data-sitekey="6LddQI8UAAAAAIbG9pRCJx2ou9Ap4DVczUlTmi4u"
+                         data-callback="recaptchaCallback"></div>
+                    <input type="hidden" class="hiddenRecaptcha required" name="hiddenRecaptcha" id="hiddenRecaptcha">
+                    <div class="form-group">
+                        <button class="btn" type="submit" id="btn-contact-submit">{{trans('landing.send')}}</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <div class="testimonials-clean">
+                    <div class="container">
+                        <div class="intro">
+                            <h2 class="text-center">{{trans('landing.provider_said')}}</h2>
+                        </div>
+                        <div class="box owl-carousel">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="author">
+                                        <img class="rounded-circle" src="{{asset('img/mas-april.png')}}">
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="desc-testimonial">
+                                        <h5 class="name">April
+                                        </h5>
+                                        <p class="title">Among Lare Yogyakarta – Eduventurement</p>
+                                        <p class="description">{{trans('landing.provider_said_content')}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="author">
+                                        <img class="rounded-circle" src="{{asset('img/mas-acong.png')}}">
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="desc-testimonial">
+                                        <h5 class="name">Mr. Dian Wibowo
+                                        </h5>
+                                        <p class="title">Chairman, WIT GEDHANG Consulturement Yogyakarta
+                                        </p>
+                                        <p class="description">{{trans('landing.provider_said_content2')}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="author">
+                                        <img class="rounded-circle" src="{{asset('img/bu-delta.png')}}">
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="desc-testimonial">
+                                        <h5 class="name">Delta
+                                        </h5>
+                                        <p class="title">Delta Artaliya, RumaHijau Yogyakarta
+                                        </p>
+                                        <p class="description">{{trans('landing.provider_said_content3')}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="highlight-blue" data-bs-parallax-bg="true">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">{{trans('landing.new.get_started_page.title')}}</h2>
+                <p class="text-center">{{trans('landing.new.get_started_page.subtitle')}}</p>
+            </div>
+            <div class="buttons" id="cta2">
+                <a class="btn btn-primary" role="button"
+                   onclick="window.location.href='{{route("memoria.register")}}'">{{trans('landing.new.get_started_page.button')}}</a>
+            </div>
+        </div>
+    </div>
+@endsection

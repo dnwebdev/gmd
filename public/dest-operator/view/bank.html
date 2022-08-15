@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Gomodo">
+  <meta name="author" content="Ervandra Halim">
+  <link rel="icon" href="favicon.ico">
+  <title>BAnk Account | Gomodo for Business</title>
+  <link href="../lib/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../lib/css/fontface.min.css" rel="stylesheet">
+  <link href="../lib/css/chosen.min.css" rel="stylesheet">
+  <link href="../css/index.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header id="header" class="dashboard-nav">
+    <div class="navigation">
+      <div class="dashboard-logo">
+        <a href="#"><img src="../img/mylogo.png" alt="GOMODO"></a>
+      </div>
+      <div class="dashboard-profile">
+        <!-- <div class="profile-image">
+          <img src="../img/profile-picture.png" alt="PROFILE">
+        </div> -->
+        <div class="profile-info">
+          <h3>Tripad Travel</h3>
+          <h5>Adventurer</h5>
+        </div>
+      </div>
+      <div class="dashboard-menu-toggle">
+        <button class="dashboard-toggle" data-toggle="collapse" data-target="#dashboard-menu"><span class="fa fa-bars"></span></button>
+      </div>
+      <div class="dashboard-menu collapse" id="dashboard-menu">
+        <nav id="mainmenu">
+          <ul>
+            <li><a href="dashboard.html"><span class="fa fa-dashboard"></span>Dashboard</a></li>
+            <li><a href="order.html"><span class="fa fa-briefcase"></span>Order</li>
+            <li><a href="product.html"><span class="fa fa-archive"></span>Product</a></li>
+            <li><a href="withdraw.html"><span class="fa fa-credit-card"></span>Withdrawal</a></li>
+            <li class="active"><a href="bank.html"><span class="fa fa-university"></span>Bank account</a></li>
+            <li><a href="settings.html"><span class="fa fa-link"></span>Settings</a></li>
+            <li><a href="help.html"><span class="fa fa-question-circle"></span>Help</a></li>
+          </ul>
+        </nav>
+        <nav class="sticky-nav">
+          <ul>
+            <li><a href="#"><span class="fa fa-sign-out"></span>Log Out</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <section id="content">
+    <div class="dashboard-header">
+      <div class="container-fluid">      
+        <div class="row">
+          <div class="col">
+            <div class="dashboard-title">
+              <h1>Bank Account</h1>
+              <div class="dashboard-tools">
+                <div class="breadcrumbs">
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Bank account</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dashboard-content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <form action="#">
+
+              <div class="row">
+                <div class="col">
+                  <div class="widget" id="order">
+                    <div class="widget-header">
+                      <h3>Bank Account List</h3>
+                      <div class="widget-tools tools-full">
+                          <button type="button" class="btn-success btn-sm" data-toggle="modal" data-target="#exampleModalCenter">New Bank Account</button>
+                      </div>
+                    </div>
+                    <div class="widget-content widget-full">
+                      <div class="widget-table">
+                        <div class="responsive-table">
+                          <table class="table-border-bottom tablesorter" id="order-table">
+                            <thead>
+                              <tr>
+                                <th>Bank</th>
+                                <th>Account Name</th>
+                                <th>Account Number</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>BCA</td>
+                                <td>Mr. Lorem ipsum</td>
+                                <td>12345634535</td>
+                                <td>Active</td>
+                                <td>
+                                  <span data-toggle="modal" data-target="#bankEdit" class="action fa fa-pencil"></span>
+                                  <span class="action fa fa-trash"></span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>BCA</td>
+                                <td>Mr. Lorem ipsum</td>
+                                <td>12345634535</td>
+                                <td>Active</td>
+                                <td>
+                                  <span data-toggle="modal" data-target="#bankEdit" class="action fa fa-pencil"></span>
+                                  <span class="action fa fa-trash"></span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>BCA</td>
+                                <td>Mr. Lorem ipsum</td>
+                                <td>12345634535</td>
+                                <td>Active</td>
+                                <td>
+                                  <span data-toggle="modal" data-target="#bankEdit" class="action fa fa-pencil"></span>
+                                  <span class="action fa fa-trash"></span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>BCA</td>
+                                <td>Mr. Lorem ipsum</td>
+                                <td>12345634535</td>
+                                <td>Active</td>
+                                <td>
+                                  <span data-toggle="modal" data-target="#bankEdit" class="action fa fa-pencil"></span>
+                                  <span class="action fa fa-trash"></span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>BCA</td>
+                                <td>Mr. Lorem ipsum</td>
+                                <td>12345634535</td>
+                                <td>Active</td>
+                                <td>
+                                  <span data-toggle="modal" data-target="#bankEdit" class="action fa fa-pencil"></span>
+                                  <span class="action fa fa-trash"></span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>BCA</td>
+                                <td>Mr. Lorem ipsum</td>
+                                <td>12345634535</td>
+                                <td>Active</td>
+                                <td>
+                                  <span data-toggle="modal" data-target="#bankEdit" class="action fa fa-pencil"></span>
+                                  <span class="action fa fa-trash"></span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>BCA</td>
+                                <td>Mr. Lorem ipsum</td>
+                                <td>12345634535</td>
+                                <td>Active</td>
+                                <td>
+                                  <span data-toggle="modal" data-target="#bankEdit" class="action fa fa-pencil"></span>
+                                  <span class="action fa fa-trash"></span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>BCA</td>
+                                <td>Mr. Lorem ipsum</td>
+                                <td>12345634535</td>
+                                <td>Active</td>
+                                <td>
+                                  <span data-toggle="modal" data-target="#bankEdit" class="action fa fa-pencil"></span>
+                                  <span class="action fa fa-trash"></span>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="pagination justify-content-end">
+                          <ul>
+                            <li class="text first"><a href="#">First</a></li>
+                            <li class="current">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li class="ellipsis">...</li>
+                            <li><a href="#">10</a></li>
+                            <li class="text last"><a href="#">Last</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <form action="#" class="form-group-no-margin">
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content col">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <div class="form-wid">
+                <label for="nationality">Bank</label>
+                <select class="form-control" id="date-available" name="date-available">
+                  <option value="1">BCA</option>
+                  <option value="2">BNI</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <div class="form-wid">
+                <label for="nationality">Account Name</label>
+                <input type="number" class="form-control" id="request-amount" name="request-amount"/>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <div class="form-wid">
+                <label for="nationality">Account Number</label>
+                <input type="number" class="form-control" id="total-balance" name="total-balance"/>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <div class="form-wid">
+                <label for="nationality">Upload Foto Buku rekening</label>
+                  <input type="file" id="imgInp" class="form-control">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-sm btn-danger" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn-sm btn-success">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </form>
+
+  <!-- Modal Edit-->
+  <form action="#" class="form-group-no-margin">
+    <div class="modal fade" id="bankEdit" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content col">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <div class="form-wid">
+                <label for="nationality">Bank</label>
+                <select class="form-control" id="date-available" name="date-available">
+                  <option value="1">BCA</option>
+                  <option value="2">BNI</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <div class="form-wid">
+                <label for="nationality">Account Name</label>
+                <input type="number" class="form-control" id="request-amount" name="request-amount" placeholder="Jhon Doe"/>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <div class="form-wid">
+                <label for="nationality">Account Number</label>
+                <input type="number" class="form-control" id="total-balance" name="total-balance" placeholder="324273547235"/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-sm btn-danger" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn-sm btn-success">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </form>
+  <script src="../lib/js/jquery-slim.min.js"></script>
+  <script src="../lib/js/bootstrap.min.js"></script>
+  <script src="../lib/js/chosen.jquery.min.js"></script>
+  <script src="../js/operator.js"></script>
+</body>
+
+</html>

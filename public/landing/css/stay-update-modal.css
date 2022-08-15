@@ -1,0 +1,121 @@
+/* Stay update modal css */
+.stay-update-modal {
+    font-family: 'Lato', sans-serif;
+    color: #212b36;
+    z-index: 9999999;
+    padding: 0 10px!important;
+}
+.stay-update-close {
+    float: right;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+.stay-update-modal .modal-dialog {
+    max-width: 1058px;
+}
+.stay-update-modal .modal-dialog .modal-content {
+    background: #f9a501;
+    border-radius: 0;
+}
+.stay-update-modal .modal-dialog .modal-content .stay-update-clouds, .stay-update-modal .modal-dialog .modal-content .stay-update-clouds-2 {
+    margin-bottom: -1px;
+}
+.stay-update-modal .modal-dialog .modal-content .stay-update-clouds-2 {
+    margin-top: -100px;
+}
+.stay-update-modal .modal-dialog .modal-content .update-position-relative {
+    background-color: white;
+    position: relative;
+}
+.stay-update-modal .modal-dialog .modal-content .update-position-relative .text-absolute-container {
+    position: absolute;
+    max-width: 500px;
+    left: 50%;
+    top: -130px;
+    transform: translateX(-50%);
+}
+.stay-update-modal .modal-dialog .modal-content .update-position-relative .text-absolute-container h2 {
+    font-size: 3.5rem;
+}
+.stay-update-modal .modal-dialog .modal-content .update-position-relative .text-absolute-container h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.stay-update-modal .modal-dialog .modal-content .stay-update-rocket {
+    position: absolute;
+    top: -78px;
+    left: calc(50% - 6px);
+    transform: translateX(-50%);
+}
+.stay-update-modal .modal-dialog .modal-content .stay-update-tree.right {
+    position: absolute;
+    right: 15%;
+    transform: translateX(50%);
+    height: 200px;
+    bottom: 0;
+}
+.stay-update-modal .modal-dialog .modal-content .stay-update-tree.left {
+    position: absolute;
+    height: 200px;
+    bottom: 0;
+    left: 15%;
+    height: 170px;
+    transform: scaleX(-1) translateX(50%);
+}
+
+@media screen and (max-width: 1024px) {
+    .stay-update-modal .modal-dialog .modal-content {
+        top: 70px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .stay-update-modal .modal-dialog .modal-content .stay-update-tree.right {
+        height: 150px;
+    }
+    .stay-update-modal .modal-dialog .modal-content .stay-update-tree.left {
+        height: 120px;
+    }
+    .stay-update-modal .modal-dialog .modal-content .stay-update-clouds, .stay-update-modal .modal-dialog .modal-content .stay-update-clouds-2 {
+        margin-top: 80px;
+    }
+    .stay-update-modal .modal-dialog .modal-content .update-position-relative .text-absolute-container {
+        max-width: 100%;
+        width: 500px;
+        top: -80px;
+        z-index: 1;
+    }
+}
+@media screen and (max-width: 425px) {
+    .stay-update-modal .modal-dialog .modal-content .stay-update-rocket {
+        width: 80px;
+        left: calc(50% - 2px);
+    }
+    .stay-update-modal .modal-dialog .modal-content .stay-update-clouds {
+        margin-top: 20px;
+    }
+    .stay-update-modal .modal-dialog .modal-content .stay-update-clouds-2 {
+        margin-top: 190px;
+    }
+    .stay-update-modal .modal-dialog .modal-content .update-position-relative .text-absolute-container {
+        top: -25px;
+        max-width: 350px;
+    }
+    .stay-update-modal .modal-dialog .modal-content .stay-update-tree.right {
+        height: 90px;
+    }
+    .stay-update-modal .modal-dialog .modal-content .stay-update-tree.left {
+        height: 75px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .stay-update-modal {
+        padding: 0 5px!important;
+    }
+    .stay-update-modal .modal-dialog .modal-content .update-position-relative .text-absolute-container {
+        max-width: 310px;
+        top: 0;
+    }
+    .stay-update-modal .modal-dialog .modal-content .stay-update-clouds-2 {
+        margin-top: 250px;
+    }
+}

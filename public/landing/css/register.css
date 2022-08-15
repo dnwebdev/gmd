@@ -1,0 +1,77 @@
+a#backBtn {
+    border-radius: 0px;
+    position: relative;
+    margin-left: -10px;
+}
+
+a#backBtn::before {
+    position: absolute;
+    bottom: -11px;
+    left: -1px;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 0;
+    border-color: transparent #007bff transparent transparent;
+}
+
+button#prevBtn {
+    border-radius: 0px;
+    position: relative;
+    margin-right: -10px;
+}
+
+button#prevBtn::after {
+    position: absolute;
+    bottom: -11px;
+    right: -1px;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 0 0;
+    border-color: rgba(124, 122, 123, 0.91) transparent transparent transparent;
+}
+
+@media (max-width: 480px) {
+    #regForm h2 {
+        font-size: 24px;
+    }
+
+}
+#agreement{
+    cursor: pointer;
+}
+
+/* SELECT */
+
+.select2-search--dropdown {
+    display: none;
+}
+
+.select2-container--default .select2-selection--single {
+    outline: none;
+    background-color: #fff;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    border-radius: 0;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #9b9b9b;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+    padding-left: 0;
+}
+
+/* PASSWORD */
+
+.field-icon {
+    float: right;
+    margin-left: -25px;
+    margin-top: -25px;
+    position: relative;
+    z-index: 2;
+  }

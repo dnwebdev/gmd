@@ -1,0 +1,48 @@
+.floating-help .btn-floating, .btn-floating:hover {
+    background-color: #3c96f3;
+}
+.floating-help .whatsapp img:hover {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+.floating-help .bg-indigo, .floating-help .bg-indigo:hover {
+    background: white;
+}
+.floating-help .fixed-action-btn ul {
+    color: transparent;
+    padding: 0;
+}
+.floating-help .fixed-action-btn {
+    bottom: 40px;
+}
+.dashboard-content {
+    margin-bottom: 63px;
+}
+.floating-help a img {
+    width: 30px; 
+    height: 30px; 
+    margin-top: 13px;
+}
+.floating-help .btn-floating .support {
+    filter: invert(1);
+    margin: 12.5px;
+}
+.floating-label {
+    color: #5a5a5a;
+    position: absolute;
+    background: #ffffff;
+    width: max-content;
+    margin: 12px 9px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.38);
+}
+@media screen and (max-width: 771px) {
+    .floating-help .fixed-action-btn {
+        bottom: 16px;
+        left: 16px;
+        margin-left: 0;
+    }
+    .dashboard-content {
+        margin-bottom: 42px;
+    }
+}

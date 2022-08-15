@@ -1,0 +1,30 @@
+{
+  "name": "gomodo/discord",
+  "authors": [
+    {
+      "name": "Karisma Prabakuncara",
+      "email": "h.karisma.p@hotmail.com"
+    }
+  ],
+  "require": {},
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    },
+    "laravel": {
+      "providers": [
+        "Gomodo\\Discord\\DiscordServiceProvider"
+      ],
+      "aliases": {
+        "Gomodo\\": "Gomodo\\Discord\\Facades\\Discord"
+      }
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Gomodo\\Discord\\": "src/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

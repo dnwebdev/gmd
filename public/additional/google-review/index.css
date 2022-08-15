@@ -1,0 +1,35 @@
+div[data-app="eapps-google-reviews"] > div > div > a {
+    display: none !important;
+
+}
+div[data-app="eapps-google-reviews"] a.eagr-header-reviews-component{
+    display: none !important;
+}
+div[data-app="eapps-google-reviews"] .eagr-header-stats-component{
+    display: none !important;
+}
+div[data-app="eapps-google-reviews"] .eagr-cta-component{
+    display: none;
+}
+div[data-app="eapps-google-reviews"] .eagr-content-component{
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.row-flex {
+    display: flex;
+    align-items: center;
+    background-color: #fafafa;
+}
+.eagr-content-component{
+    display: none;
+}
+
+.eagr-header-right {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: row!important;
+    -webkit-align-items: flex-end;
+    align-items: center!important;
+}

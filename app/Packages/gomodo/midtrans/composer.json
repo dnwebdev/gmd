@@ -1,0 +1,28 @@
+{
+    "name": "gomodo/midtrans",
+    "description": "Bagaimana menggunakan Midtrans?",
+    "authors": [
+        {
+            "name": "Rega",
+            "email": "rega.syahfika@gomodo.tech"
+        }
+    ],
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Gomodo\\Midtrans\\MidTransServiceProvider"
+            ],
+            "aliases": {
+                "Xendit": "Gomodo\\Midtrans\\Facades\\MidTransFacade"
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Gomodo\\Midtrans\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

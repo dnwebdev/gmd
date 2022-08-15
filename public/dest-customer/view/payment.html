@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Gomodo">
+  <meta name="author" content="Ervandra Halim">
+  <link rel="icon" href="favicon.ico">
+  <title>Payment | Gomodo</title>
+  <link href="../lib/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../lib/css/fontface.min.css" rel="stylesheet" />
+  <link href="../css/frontpage.css" rel="stylesheet" />
+  <link href="../css/checkout.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <header id="header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <div class="d-flex justify-content-between align-items-center flex-wrap">
+            <div class="navigation d-flex align-items-center">
+              <div class="logo">
+                <a href="#"><img src="../img/logo-dodyadventure.png" alt="LOGO CLIENT"></a>
+              </div>
+              <div class="mainmenu">
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li class="active"><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Retreive Booking</a></li>
+                </ul>
+              </div>
+              <div class="mobile-nav">
+                <div class="btn-mobile-nav"><span class="fa fa-caret-down"></span></div>
+              </div>
+            </div>
+            <div class="right-nav opened">
+              <div class="mobilemenu">
+                <ul>
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Retreive Booking</a></li>
+                </ul>
+              </div>
+              <div class="searchtop">
+                <form action="#">
+                  <button type="submit" class="btn-search"><span class="fa fa-search"></span></button>
+                  <input type="search" id="q" name="q" class="form-control" placeholder="Search your favourite experience.." />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="content">
+
+    <div id="maincontent" class="bg-grey">
+      <div class="checkout">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+
+              <div class="checkout-steps">
+                <ul>
+                  <li><strong>1</strong>Guest Information</li>
+                  <li class="active"><strong>2</strong>Payment Information</li>
+                  <li><strong>3</strong>Booked</li>
+                </ul>
+              </div>
+
+              <div class="alert alert-primary" role="alert">
+                <div class="d-flex">
+                  <div class="alert-icon"><span class="fa fa-info-circle"></span></div>
+                  <p>Your order has been booked with order ID # Ord120498123412. Please complete payment information to
+                    continue and secure
+                    your booking.</p>
+                </div>
+              </div>
+
+              <form>
+
+                <div class="row">
+                  <div class="col-sm-12 col-md-6 col-lg-7">
+                    <div class="card-form widget">
+                      <h3>Payment Method</h3>
+                      <div class="widget-content">
+                        <div class="payment-methods">
+                          <div class="custom-control custom-radio">
+                            <input type="radio" id="payment-cc" name="payment-method" class="custom-control-input"
+                              checked>
+                            <label class="custom-control-label" for="payment-cc">Credit Card</label>
+                            <div class="custom-payment">
+                              <input type="text" class="form-control" id="cc-name" name="cc-name" value="John Doe"
+                                placeholder="Name">
+                              <div class="form-with-icon icon-right">
+                                <input type="number" class="form-control" id="cc-number" name="cc-number" value="4430"
+                                  placeholder="Card Number">
+                                <span class="form-icon icon-small"><span class="fa fa-credit-card"></span></span>
+                              </div>
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  <input type="text" class="form-control" id="cc-valid" name="cc-valid" placeholder="Valid To" />
+                                </div>
+                                <div class="col-sm-6">
+                                  <div class="form-with-icon icon-right">
+                                    <input type="number" class="form-control" id="cc-cvv" name="cc-cvv" placeholder="CVV" />
+                                    <span class="form-icon icon-small" title="CVV is digits number that were placed on the back side of your card."><span
+                                        class="fa fa-info-circle"></span></span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="custom-control custom-radio">
+                            <input type="radio" id="payment-atm" name="payment-method" class="custom-control-input">
+                            <label class="custom-control-label" for="payment-atm">Debit Card (ATM Transfer)</label>
+                            <div class="custom-payment alert alert-secondary">
+                              <h5>Using Debit Card</h5>
+                              <p>You can send your transfer receipt to us by using our contact us page.</p>
+                            </div>
+                          </div>
+                          <div class="custom-control custom-radio">
+                            <input type="radio" id="payment-crypto" name="payment-method" class="custom-control-input">
+                            <label class="custom-control-label" for="payment-crypto">Cryptocurrency (BTC, ETH)</label>
+                            <div class="custom-payment alert alert-secondary">
+                              <h5>We Accept Cryptocurrency!</h5>
+                              <p>Navigate to contact us to get more about this payment method.</p>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 col-md-6 col-lg-5">
+                    <div class="card-activity">
+                      <div class="activity-image">
+                        <img src="../img/expandable-bromo.png" alt="EXPANDABLE BROMO" height="128">
+                      </div>
+                      <div class="activity-detail">
+                        <h2>Expendable Bromo</h2>
+                        <div class="activity-meta">
+                          <h4>Nature Activity</h4>
+                          <h4>Malang, East Java</h4>
+                        </div>
+                        <div class="activity-info">
+                          <h5><span class="fa fa-calendar"></span> 16 March 2018</h5>
+                          <h5><span class="fa fa-male"></span> 3 Guests</h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card-form widget">
+                      <div class="widget-content">
+                        <h4>Having Gomodo promotion code?</h4>
+                        <p>Get discount and other free stuffs by typing promotion code.</p>
+                        <form>
+                          <div class="row">
+                            <div class="col-sm-7">
+                              <div class="form-group no-margin form-with-icon icon-right">
+                                <input type="text" class="form-control" id="promo" name="promo" value="GOMODO01"
+                                  placeholder="Promo code" />
+                                <span class="form-icon"><span class="fa fa-check-circle-o"></span></span>
+                              </div>
+                            </div>
+                            <div class="col-sm-5">
+                              <button type="submit" class="no-margin btn btn-promo btn-block" data-toggle="modal"
+                                data-target="#modal-error">Apply</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="footer-filler"></div>
+
+                <footer id="checkout-footer">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col">
+                        <div class="d-flex justify-content-end align-items-center">
+                          <div class="checkout-price">
+                            <h5>Grand Total</h5>
+                            <h3>Rp 1.000.000</h3>
+                          </div>
+                          <div class="checkout-button">
+                            <button type="submit" class="btn btn-checkout" data-toggle="modal" data-target="#modal-success">Checkout</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </footer>
+
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal-success" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+        <div class="modal-content modal-gomodo">
+          <div class="modal-body text-center">
+            <h3>Congratulation!</h3>
+            <h5 class="modal-icon">
+              <img src="../img/icons/success.png" alt="SUCCESS">
+            </h5>
+            <p>Your booking has already successfully paid. <br />We have sent the receipt to your email.</p>
+            <button class="btn" data-dismiss="modal">Ok, Got it</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal-error" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+        <div class="modal-content modal-gomodo">
+          <div class="modal-body text-center">
+            <h3>Oops! Sorry!</h3>
+            <h5 class="modal-icon">
+              <img src="../img/icons/error.png" alt="ERROR">
+            </h5>
+            <p>Something wrong with your payment process. <br/>Please try again.</p>
+            <button class="btn" data-dismiss="modal">Back to payment</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <script src="../lib/js/jquery-slim.min.js"></script>
+  <script src="../lib/js/bootstrap.min.js"></script>
+  <script src="../js/client.js"></script>
+</body>
+
+</html>

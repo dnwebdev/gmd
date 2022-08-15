@@ -1,0 +1,26 @@
+#side-bar{
+	background: #fff;
+	height: 100%;
+	width: 120px;
+	float: left;
+	margin-top:2px;
+  	padding-top:25px;
+  	margin-bottom: 0px;
+}
+
+#side-bar i {
+    clear: both;
+    font-size: 1.75em;
+    
+}
+
+#side-bar li {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#top-bar{
+	padding-left: 30px;
+	margin-bottom: 0px;
+
+}

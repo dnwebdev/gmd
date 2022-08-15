@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="ticket" width="30" height="21" viewBox="0 0 30 21">
+    <defs>
+        <style>
+            .cls-1{fill:#1b1c1d}
+        </style>
+    </defs>
+    <path id="ticket-2" d="M12.5 12.5A1.5 1.5 0 0 0 11 14v3a1.5 1.5 0 0 0 3 0v-3a1.5 1.5 0 0 0-1.5-1.5zm18 1.5a1.5 1.5 0 0 0 1.5-1.5v-6A1.5 1.5 0 0 0 30.5 5h-27A1.5 1.5 0 0 0 2 6.5v6A1.5 1.5 0 0 0 3.5 14a1.5 1.5 0 0 1 0 3A1.5 1.5 0 0 0 2 18.5v6A1.5 1.5 0 0 0 3.5 26h27a1.5 1.5 0 0 0 1.5-1.5v-6a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 1 0-3zM29 11.27a4.5 4.5 0 0 0 0 8.46V23H14a1.5 1.5 0 0 0-3 0H5v-3.27a4.5 4.5 0 0 0 0-8.46V8h6a1.5 1.5 0 0 0 3 0h15z" class="cls-1" data-name="ticket" transform="translate(-2 -5)"/>
+</svg>

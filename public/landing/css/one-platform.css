@@ -1,0 +1,30 @@
+/* one platform to rule them all */
+.features-boxed.one-platform-rule {
+    background-color: #f0f8ff;
+    padding-bottom: 40px;
+}
+
+.one-platform-rule .one-platform-text{
+    padding: 3rem;
+}
+.one-platform-text .lead.mb-0{
+    font-size:15px;
+    margin-top:1.25rem;
+}
+.one-platform-text .h2{
+    font-weight: 700;
+}
+.one-platform-img{
+
+    min-height: 20rem;
+    background-size: cover;
+}
+.one-platform-img#online-booking{
+    background-image: url('../img/online-booking.png');
+}
+.one-platform-img#online-payment{
+    background-image: url('../img/payment.png');
+}
+.one-platform-img#online-provider-payment{
+    background-image: url('../img/provider-paid.png');
+}

@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Gomodo">
+  <meta name="author" content="Ervandra Halim">
+  <link rel="icon" href="favicon.ico">
+  <title>Success | Gomodo</title>
+  <link href="../lib/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../lib/css/fontface.min.css" rel="stylesheet" />
+  <link href="../lib/css/flickity.css" rel="stylesheet" />
+  <link href="../css/frontpage.css" rel="stylesheet" />
+  <link href="../css/checkout.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <header id="header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <div class="d-flex justify-content-between align-items-center flex-wrap">
+            <div class="navigation d-flex align-items-center">
+              <div class="logo">
+                <a href="#"><img src="../img/logo-dodyadventure.png" alt="LOGO CLIENT"></a>
+              </div>
+              <div class="mainmenu">
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li class="active"><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Retreive Booking</a></li>
+                </ul>
+              </div>
+              <div class="mobile-nav">
+                <div class="btn-mobile-nav"><span class="fa fa-caret-down"></span></div>
+              </div>
+            </div>
+            <div class="right-nav opened">
+              <div class="mobilemenu">
+                <ul>
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Retreive Booking</a></li>
+                </ul>
+              </div>
+              <div class="searchtop">
+                <form action="#">
+                  <button type="submit" class="btn-search"><span class="fa fa-search"></span></button>
+                  <input type="search" id="q" name="q" class="form-control" placeholder="Search your favourite experience.." />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="content">
+
+    <div id="maincontent" class="bg-grey">
+      <div class="checkout">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+
+              <div class="checkout-steps">
+                <ul>
+                  <li><strong>1</strong>Guest Information</li>
+                  <li><strong>2</strong>Payment Information</li>
+                  <li class="active"><strong>3</strong>Booked</li>
+                </ul>
+              </div>
+
+              <div class="alert alert-primary" role="alert">
+                <div class="d-flex">
+                  <div class="alert-icon"><span class="fa fa-info-circle"></span></div>
+                  <p>Payment for order ID # Ord120498123412 has been successfuly reconsiled.</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-12 col-md-4">
+                  <div class="card-order">
+                    <div class="order-image">
+                      <img src="../img/expandable-bromo.png" alt="EXPANDABLE BROMO" />
+                    </div>
+                    <div class="order-detail">
+                      <h3>Expendable Bromo</h3>
+                      <div class="order-info">
+                        <h5><span class="fa fa-calendar"></span> 16 March 2018</h5>
+                        <h5><span class="fa fa-check-circle-o"></span> 2D 1N Hiking Package</h5>
+                      </div>
+                      <a href="#" class="btn btn-primary btn-block">View Order</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-12 col-md-8">
+                  <div class="more-experience">
+                    <h3>More experience to do</h3>
+                    <div class="product-carousel">
+                      <div class="carousel-cell">
+                        <div class="product-thumbnail">
+                          <img src="../img/more-product.jpg" alt="MORE" />
+                          <h5>Nature Activity</h5>
+                          <h3>Ubud Village</h3>
+                          <h4>Rp 550.000 / pax</h4>
+                          <a href="#" class="thumbnail-link"></a>
+                        </div>
+                      </div>
+
+                      <div class="carousel-cell">
+                        <div class="product-thumbnail">
+                          <img src="../img/more-product.jpg" alt="MORE" />
+                          <h5>Nature Activity</h5>
+                          <h3>Ubud Village</h3>
+                          <h4>Rp 550.000 / pax</h4>
+                          <a href="#" class="thumbnail-link"></a>
+                        </div>
+                      </div>
+
+                      <div class="carousel-cell">
+                        <div class="product-thumbnail">
+                          <img src="../img/more-product.jpg" alt="MORE" />
+                          <h5>Nature Activity</h5>
+                          <h3>Ubud Village</h3>
+                          <h4>Rp 550.000 / pax</h4>
+                          <a href="#" class="thumbnail-link"></a>
+                        </div>
+                      </div>
+
+                      <div class="carousel-cell">
+                        <div class="product-thumbnail">
+                          <img src="../img/more-product.jpg" alt="MORE" />
+                          <h5>Nature Activity</h5>
+                          <h3>Ubud Village</h3>
+                          <h4>Rp 550.000 / pax</h4>
+                          <a href="#" class="thumbnail-link"></a>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <script src="../lib/js/jquery-slim.min.js"></script>
+  <script src="../lib/js/bootstrap.min.js"></script>
+  <script src="../lib/js/flickity.pkgd.min.js"></script>
+  <script src="../js/client.js"></script>
+  <script>
+    jQuery(document).ready(function ($) {
+      $('.product-carousel').flickity({
+        cellAlign: 'left',
+        contain: true,
+        pageDots: false
+      });
+    })
+  </script>
+</body>
+
+</html>

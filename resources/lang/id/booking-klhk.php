@@ -1,0 +1,45 @@
+<?php
+
+return [
+
+    'and' => 'dan',
+    'guest' => 'Tamu',
+    'adult' => 'Dewasa',
+    'children' => 'Anak-anak',
+    'name' => 'Nama',
+    'phone' => 'Telepon',
+    'nationality' => 'Negara',
+    'city' => 'Kota',
+    'search' => 'Ketik untuk mencari',
+    'address' => 'Alamat',
+    'note' => 'Catatan untuk Provider',
+    'note_detail' => 'Kamu bisa mengirim catatan penting ke Penyedia Ekowisata.',
+    'total' => 'Total Keseluruhan',
+    'message' => 'Harga ini tidak termasuk biaya tambahan untuk turis luar negeri, kalau ada.',
+    'dismiss' => 'MENGERTI',
+    'processing' => 'Memproses Pesanan Anda',
+    'price_details' => 'Rincian Harga',
+    'type_note' => 'Tulis catatan untuk Provider disini...',
+    'pay' => 'Bayar',
+    'book' => 'Pesan',
+    'form_notice' => 'Tolong isi formulir dengan lengkap!',
+    'submit' => 'Kirim',
+    'special_request' => 'Permintaan Khusus',
+    'preferred_payment' => 'Metode Pembayaran Yang Diinginkan',
+    'select_payment' => 'Pilih Metode Pembayaran',
+    'direct_payment' => 'Transfer Langsung',
+    'ots_payment' => 'Di Tempat',
+    'online_payment' => 'Pembayaran Online via Website',
+    'requested_schedule' => 'Jawal Yang Diinginkan',
+    'request_booker_details' => 'Detail Permintaan dan Pemesan',
+    'start_from' => 'Mulai Dari',
+    'having_promotion' => 'Punya Kode Promosi?',
+    'get_discount' => 'Dapatkan diskon dengan memasukkan kode promo.',
+    'zip_code'      => 'Kode Pos',
+    'installment_duration'    => 'Pilih durasi cicilan',
+    'tooltip_gopay' => 'Jika ingin menggunakan gopay silakan cetak barcode ketika proses pembayaran berlangsung.',
+    'charge' => 'Biaya dikenakan',
+    'validation' => [
+        'alfamart' => 'Maximum pembayaran alfamart IDR 5.000.000'
+    ]
+];

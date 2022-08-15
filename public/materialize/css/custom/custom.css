@@ -1,0 +1,198 @@
+/*================================================================================
+	Item Name: Materialize - Material Design Admin Template
+	Version: 3.1
+	Author: GeeksLabs
+	Author URL: http://www.themeforest.net/user/geekslabs
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN CSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+
+
+img.disabled {
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+}
+
+/* Disable grayscale on hover */
+.card-image:hover img.disabled{
+  -webkit-filter: grayscale(0);
+  filter: none;
+}
+
+
+.card-image .btn-large i{
+	font-size:3.6rem;
+}
+
+
+.card-image .btn-large i{
+	font-size:3.6rem;
+}
+
+
+.card-image .btn-floating.disabled{
+	display: none;
+}
+
+
+.animated.fast{
+	animation-duration: 0.3s;
+}
+
+.unset-position{
+	position: unset !important;
+}
+
+.modal-large{
+	width: 90%;		
+}
+
+.card.horizontal{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
+
+.text-mute{
+	font-size:0.8rem;
+}
+
+
+.tabs .tab.active {
+    border-bottom: 2px solid;
+}
+
+.material-icons.icon{
+	font-size:15px;
+	cursor: pointer;
+}
+
+.pointer{
+	cursor: pointer;
+}
+
+#slide-out::-webkit-scrollbar { 
+    display: none; 
+}
+
+
+.daypickwrap{
+	margin-top:1rem;
+}
+
+.product{
+	margin-bottom: 20px;
+  height: 300px;
+}
+
+
+
+.tabs-vertical .tabs{
+    
+    height: auto;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.tabs-vertical .tab {
+    width: 100%;
+}
+    .tabs-vertical .tab.active {
+        -moz-transition: border-color .5s ease;
+        -o-transition: border-color .5s ease;
+        -webkit-transition: border-color .5s ease;
+        transition: border-color .5s ease;
+        border-right: 3px solid #ffab40;
+        border-bottom: none;
+    }
+
+    .tabs-vertical .tab:hover {
+        border-right: 3px solid #eeeeee;
+    }
+
+
+.tabs-vertical .indicator {
+    display: none;
+}
+
+/* Color Picker */
+.colorpicker-visible {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  margin-top: 0; 
+  position: absolute;
+}
+
+.datepicker-dropdown.dropdown-menu {
+  visibility: visible;
+  opacity: 1;
+  margin-top: 0; }
+
+.colorpicker-selectors i {
+  margin-top: 5px;
+  margin-left: 5px; }
+
+.colorpicker-2x .colorpicker-saturation {
+  width: 200px;
+  height: 200px; }
+
+.colorpicker-2x .colorpicker-hue,
+.colorpicker-2x .colorpicker-alpha {
+  width: 65px;
+  height: 200px; }
+
+.colorpicker-2x .colorpicker-color,
+.colorpicker-2x .colorpicker-color div {
+  height: 30px; 
+  width: 270px;
+}
+
+/*
+.product-detail{
+  margin-top: 20px;
+}*/
+
+
+
+.autocomplete-suggestions { border: 1px solid #999; background: #FFF; overflow: auto; }
+.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+.autocomplete-selected { background: #F0F0F0; }
+.autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }
+.autocomplete-group { padding: 2px 5px; }
+.autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
+
+
+
+
+.touchspin-input{
+  font-size: 1rem;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.input-group{
+  display: flex;
+}
+
+input.browser-default{
+  padding:5px;
+  width: 100%;
+
+}
+
+input.browser-default[readonly]{
+  background: #ccc;
+}
+
+#total_amount_column{
+  margin-top:20px;
+}
+
+#total_amount_column div{
+  padding:10px !important;
+}
+

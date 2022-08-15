@@ -1,0 +1,310 @@
+#product-detail .card .list .list__item .list__time {
+    width: 19%;
+}
+
+#product-detail .card .list .list__item .list__desc {
+    width: 70%;
+}
+/* Card Footer Btn */
+.card-footer p {
+    font-size: 13px;
+}
+.card-footer .fs-22 {
+    font-size: 18px;
+    line-height: 1;
+}
+.card-footer .btn {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+body {
+    overflow-x: hidden
+}
+#product-booking .card-footer .bold {
+    margin-top: 5px;
+}
+#payment-virtual-account .lock {
+    width: 24px;
+}
+#payment-virtual-account .secure {
+    font-size: 14px;
+    color: #3a4555;
+    vertical-align: bottom;
+}
+#payment-virtual-account .comodo-logo {
+    width: 133px;
+}
+#payment-virtual-account .xendit-logo {
+    width: 95px
+}
+#product-booking #booking-price .card-body  .nowrap {
+    white-space: nowrap;
+}
+.price-tier th {
+    max-width: 100px;
+}
+/* Disable Spinner Input Type Number */ 
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+input[type=number] {
+    -moz-appearance:textfield;
+}
+.visa-master img {
+    height: 3rem
+}
+/* Pagination */
+.pagination-product .info{
+    position: absolute;
+    margin-top: 8px;
+}
+ul.pagination {
+justify-content: center;
+}
+
+ul.pagination li {
+    background-color: #2699fb;
+    padding: 4px 12px;
+    margin: 4px;
+    color: white;
+    border-radius: 50%;
+    position: relative;
+    width: 32px;
+    height: 32px;
+}
+
+ul.pagination li > a {
+    color: white !important;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 13px;
+}
+
+ul.pagination li.active {
+    color: #3099fb !important;
+    background-color: white;
+}
+ul.pagination .next, ul.pagination .prev {
+    padding: 0 12px;
+    top: 46%;
+    font-size: 20px;
+}
+/* Safari bug fix */
+html {
+    overflow-x: hidden;
+}
+/* Toaster bug fix */
+#toast-container {
+    z-index: 99999999;
+}
+
+#topNavbar{
+    height: 3rem;
+}
+
+#topNavbar .navbar-brand img{
+    height: 27px;
+}
+
+#topNavbar .profile-info #company-name{
+    font-size: 17px;
+}
+
+#topNavbar > .container .nav-item .btn{
+    height: 1.8rem;
+    padding: .44rem 1.14rem;
+    font-size: 10px;
+}
+
+#topNavbar > .container .nav-item > .current-language{
+    margin-top: 7.5px;
+}
+
+#topNavbar .retrieve {
+    width: max-content;
+}
+#list-product .col-product .card .badge {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#product-detail .card .exclude ul {
+    -webkit-padding-start: 0;
+    padding-inline-start: 0;
+    list-style: none;
+    margin-bottom: 0;
+}
+#product-detail .card .exclude ul li:before {
+    content: "\F00D";
+    font-family: FontAwesome;
+    color: rgb(255, 0, 0);
+    font-style: normal;
+    font-weight: 400;
+    margin-right: 6px;
+    margin-left: 3px;
+}
+#product-detail .owl-carousel .owl-nav{
+    position: absolute!important;
+    top: 32%!important;
+    width: 100%!important;
+}
+
+#product-detail .owl-carousel .owl-nav .owl-prev{
+    position: absolute!important;
+    left: 0!important;
+    z-index: 999999999!important;
+}
+
+#product-detail .owl-carousel .owl-nav .owl-prev span, #product-detail .owl-carousel .owl-nav .owl-next span{
+    font-size: 5rem;
+}
+
+#product-detail .owl-carousel .owl-nav .owl-next{
+    position: absolute!important;
+    right: 0!important;
+    z-index: 999999999!important;
+}
+
+
+#product-booking .btn:disabled {
+    opacity: 1;
+}
+.voucher-button:last-child {
+    display: none;
+}
+.md-form.failed:after {
+    padding: 0 7px 1px;
+}
+.btn-amber {
+    background-color: #ffbf00!important;
+}
+#container-top-product .card .card-body h3, #product-detail .card .card-body h3, #product-booking .card .card-body h3 {
+    text-transform: capitalize
+}
+.bg-light-gray {
+    background: #f8f8f8;
+}
+.external-notes {
+    border-bottom: 1px solid #bdbdbd;
+}
+nav.navbar-fixed-top {
+    z-index: 9999;
+}
+.list_payment {
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    object-fit: contain;
+    background: aliceblue;
+    box-shadow: none;
+    float: right;
+}
+.midtrans-img.list_payment {
+    padding: 2px;
+}
+.cod-img.list_payment {
+    width: 50px;
+    padding: 0;
+    float: left;
+    background: none;
+    margin-right: 5px;
+}
+#choose-payment .custom-radio {
+    max-width: 300px;
+}
+#choose-payment .custom-control-label {
+    vertical-align: baseline;
+}
+.cod.custom-control-label::before, .cod.custom-control-label::after {
+    left: -1.45rem;
+}
+@media (min-width: 320px) and (max-width: 767px){
+    #topNavbar .navbar-brand img{
+        margin-top: -0.29rem;
+    }
+    .pagination-product .info{
+        position: relative;
+        margin-bottom: 5px;
+    }
+    #landing-language .language-option ul li .box-language {
+        width: 100%;
+    }
+    #landing-language .description-language {
+        padding-right: 0;
+        width: auto;
+        font-size: inherit;
+    }
+    #landing-language .current-language {
+        padding-left: 1rem;
+        margin-top: 1.2rem;
+        margin-bottom: 1.2rem;
+        max-width: 100%;
+    }
+    #landing-language .description-current-language {
+        display: inline-block;
+        color: #3a4555;
+        margin-left: 5px;
+        margin-right: 2px;
+    }
+    #choose-payment .custom-radio {
+        max-width: 100%;
+    }
+}
+@media (min-width: 768px) and (max-width: 997px){
+    .language-option {
+        right: 10px;
+        left: unset;
+        top: unset;
+        position: absolute;
+        width: unset;
+    }
+}
+
+/* Gomodo Embed Widget */
+.col-embed-6 {
+    width: 50%;
+    flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.col-embed-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.embed-remove-d-none.row {
+    margin: 0 20px;
+}
+/* Special */
+@media (max-width: 450px) {
+    .col-embed-6 {
+        width: 100%;
+        flex: unset;
+    }
+    .col-embed-4 {
+        -ms-flex: unset;
+        flex: unset;
+        max-width: 100%;
+    }
+}
+
+#product-booking input.select-dropdown {
+    color: #555;
+}
+
+#product-booking .caret {
+    color: #999;
+}

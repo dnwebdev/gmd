@@ -1,0 +1,93 @@
+.card-img-top {
+    position: relative;
+}
+.card .percent {
+    font-size: 18px;
+    font-weight: 600;
+}
+.card .off {
+    margin: 0;
+}
+.card .special-price::before, .card .bedge-discount::before {
+    content: '';
+    position: absolute;
+    left: -7px;
+    top: 0px;
+    border-style: solid;
+    border-width: 0 19px 15px 0;
+    border-color: transparent #0d58af #0d58af transparent;
+    transform: skewX(-16deg);
+    width: 17px;
+    height: 35px;
+    border-radius: 3px;
+}
+.card .special-price, .card .special-price:hover, .card .bedge-discount {
+    background: #0d58af;
+    transform: skewX(16deg);
+    position: absolute;
+    top: 16px;
+    left: -2px;
+    padding: 0px 12px;
+    color: white;
+    font-size: 14px;
+    line-height: 1;
+    height: 35px;
+    width: min-content;
+    -webkit-box-shadow: 4px 4px 9px 0 rgba(38,153,251,.2);
+    box-shadow: 4px 4px 9px 0 rgba(38,153,251,.2);
+    border-radius: 3px;
+    z-index: 1;
+}
+.card .special-price:not(:root:root), .card .special-price:hover:not(:root:root), .card .bedge-discount:not(:root:root) {
+    width: fit-content;
+}
+.card .bedge-discount:not(:root:root) {
+    width: unset;
+}
+.card .bedge-discount::before {
+    left: -6px;
+    border-color: transparent #f6ba33 #f6ba33 transparent;
+}
+.card .bedge-discount {
+    background: #f6ba33;
+    top: 56px;
+    left: -3px;
+    width: max-content;
+}
+.card .bedge-discount h2 {
+    transform: skewX(-16deg);
+    margin-top: 7px;
+    color: white;
+}
+.card .bedge-discount .off {
+    font-size: 13px;
+    vertical-align: top;
+}
+.card .special-price h2, .card .special-price h2:hover {
+    transform: skewX(-16deg);
+    font-size: 11px;
+    font-weight: 600;
+    margin-top: 4px;
+    color: white;
+}
+.card .high-risk-activity {
+    position: absolute;
+    background: #4285f4;
+    color: white;
+    text-align: center;
+    padding: 4px;
+    z-index: 1;
+    width: 100%;
+    font-weight: 700;
+} 
+/* Hover Fix */
+#list-product a .card .special-price h2, 
+#list-product a .card .special-price h2:hover,
+#list-product a .card .bedge-discount h2,
+#list-product a .card .bedge-discount h2:hover,
+#list-product a .card .bedge-discount h2 .off,
+#list-product a .card .bedge-discount h2 .off:hover,
+#list-product a .card .high-risk-activity,
+#list-product a .card .high-risk-activity:hover {
+    color: white;
+}
